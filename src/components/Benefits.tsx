@@ -23,7 +23,7 @@ const benefits = [
   },
 ];
 
-const highlights = ["Finanças e Contabilidade", "Marketing e Vendas", "Recursos Humanos"];
+const highlights = ["Logística e Operações", "Marketing e Vendas", "Recursos Humanos"];
 
 const Benefits = () => {
   return (
