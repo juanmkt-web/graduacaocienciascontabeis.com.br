@@ -124,11 +124,6 @@ const Courses = () => {
               <div className="relative h-64 lg:h-auto">
                 <img src={courseDetails.image} alt={courseDetails.title} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:bg-gradient-to-r" />
-                <div className="absolute bottom-4 left-4 right-4 lg:bottom-8 lg:left-8">
-                  <span className="inline-block bg-primary text-white text-sm font-bold px-4 py-2 rounded-full mb-2">
-                    NOTA 5 NO MEC
-                  </span>
-                </div>
               </div>
 
               {/* Content Side */}
