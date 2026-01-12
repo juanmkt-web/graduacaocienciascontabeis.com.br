@@ -40,9 +40,9 @@ const Benefits = () => {
                   DE PERFORMANCE EXECUTIVA
                 </h2>
                 <p className="text-xs md:text-lg text-white/80 leading-relaxed mb-4 md:mb-6">
-                  O curso de Administração da FASUL forma profissionais preparados para liderar, inovar e transformar
-                  organizações. Com <strong className="text-white">3.200 horas</strong> de formação completa e
-                  reconhecimento do <strong className="text-white">MEC com nota máxima</strong>.
+                  A escolha certa para sua carreira. Uma graduação robusta e completa, reconhecida com a{" "}
+                  <strong className="text-white">excelência máxima do MEC, </strong>desenhada para quem busca o topo da
+                  hierarquia corporativa.
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
