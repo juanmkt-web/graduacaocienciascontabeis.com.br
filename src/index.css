@@ -47,12 +47,10 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
     
-    /* Gradient colors - Deep blue to purple tones */
-    --gradient-start: 210 100% 15%;
-    --gradient-mid: 260 70% 25%;
-    --gradient-mid-2: 230 80% 20%;
-    --gradient-end: 280 60% 30%;
-    --gradient-light: 200 80% 45%;
+    /* Gradient colors - Navy blue to light blue */
+    --gradient-start: 197 90% 26%;
+    --gradient-mid: 200 85% 35%;
+    --gradient-end: 203 80% 45%;
     
     /* Legacy gradient colors */
     --gradient-cyan: 350 80% 60%;
@@ -138,23 +136,13 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Animated gradient background */
+  /* Fixed gradient background - Navy to light blue */
   .gradient-animated {
     background: linear-gradient(135deg, 
-      hsl(var(--gradient-end)) 0%, 
-      hsl(var(--gradient-mid)) 25%, 
-      hsl(var(--gradient-mid-2)) 45%, 
-      hsl(var(--gradient-start)) 65%, 
-      hsl(var(--gradient-light)) 100%
+      hsl(var(--gradient-start)) 0%, 
+      hsl(var(--gradient-mid)) 50%, 
+      hsl(var(--gradient-end)) 100%
     );
-    background-size: 300% 300%;
-    animation: gradientAnimation 12s ease infinite;
-  }
-  
-  @keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
   }
   
   /* Gradient text */
