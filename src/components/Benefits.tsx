@@ -42,16 +42,16 @@ const Benefits = () => {
               {/* Left side - Main Title */}
               <div className="animate-fade-in text-center md:text-left">
                 <h2 className="text-xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 md:mb-6 leading-tight">
-                  BACHARELADO EM<span className="text-primary"> ADMINISTRAÇÃO </span>
+                  <span className="text-primary"> ADMINISTRAÇÃO </span>
                   <br />
                   QUE TRANSFORMA CARREIRAS
                 </h2>
                 <p className="text-xs md:text-lg text-white/80 leading-relaxed mb-4 md:mb-6">
-                  O curso de Administração da FASUL forma profissionais preparados para liderar, 
-                  inovar e transformar organizações. Com <strong className="text-white">3.200 horas</strong> de 
-                  formação completa e reconhecimento do <strong className="text-white">MEC com nota máxima</strong>.
+                  O curso de Administração da FASUL forma profissionais preparados para liderar, inovar e transformar
+                  organizações. Com <strong className="text-white">3.200 horas</strong> de formação completa e
+                  reconhecimento do <strong className="text-white">MEC com nota máxima</strong>.
                 </p>
-                
+
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
                   {highlights.map((item, index) => (
                     <div key={index} className="flex items-center gap-1.5 text-white/90">
