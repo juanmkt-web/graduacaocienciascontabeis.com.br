@@ -23,14 +23,7 @@ const benefits = [
   },
 ];
 
-const highlights = [
-  "Finanças e Contabilidade",
-  "Marketing e Vendas",
-  "Recursos Humanos",
-  "Logística e Operações",
-  "Empreendedorismo",
-  "Gestão Estratégica",
-];
+const highlights = ["Finanças e Contabilidade", "Marketing e Vendas", "Recursos Humanos"];
 
 const Benefits = () => {
   return (
