@@ -34,8 +34,8 @@ const Benefits = () => {
             <div className="benefits-grid">
               {/* Left side - Main Title */}
               <div className="animate-fade-in text-center md:text-left">
-                <h2 className="text-xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 md:mb-6 leading-tight">
-                  <span className="text-primary"> ADMINISTRAÇÃO </span>
+              <h2 className="text-xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 md:mb-6 leading-tight">
+                  <span className="text-blue-400"> ADMINISTRAÇÃO </span>
                   <br />
                   QUE TRANSFORMA CARREIRAS
                 </h2>
@@ -48,7 +48,7 @@ const Benefits = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
                   {highlights.map((item, index) => (
                     <div key={index} className="flex items-center gap-1.5 text-white/90">
-                      <CheckCircle2 className="h-3 w-3 md:h-4 md:w-4 text-primary flex-shrink-0" />
+                      <CheckCircle2 className="h-3 w-3 md:h-4 md:w-4 text-blue-400 flex-shrink-0" />
                       <span className="text-[10px] md:text-sm">{item}</span>
                     </div>
                   ))}
@@ -70,8 +70,8 @@ const Benefits = () => {
                       animationDelay: `${0.3 + index * 0.1}s`,
                     }}
                   >
-                    <div className="flex-shrink-0 w-8 h-8 md:w-12 md:h-12 rounded-md md:rounded-lg flex items-center justify-center shadow-lg shadow-primary/30 bg-primary">
-                      <benefit.icon className="h-4 w-4 md:h-6 md:w-6 text-primary-foreground" strokeWidth={2.5} />
+                    <div className="flex-shrink-0 w-8 h-8 md:w-12 md:h-12 rounded-md md:rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/30 bg-blue-500">
+                      <benefit.icon className="h-4 w-4 md:h-6 md:w-6 text-white" strokeWidth={2.5} />
                     </div>
                     <div className="flex-1">
                       <p className="text-white text-xs md:text-lg leading-tight">

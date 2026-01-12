@@ -43,7 +43,7 @@ const Steps = () => {
                   </div>
                 </div>
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-1/2 left-[60%] w-full h-0.5 bg-gradient-to-r from-primary to-primary/20 z-0"></div>
+                  <div className="hidden md:block absolute top-1/2 left-[60%] w-full h-0.5 bg-gradient-to-r from-blue-500 to-blue-500/20 z-0"></div>
                 )}
               </div>
               <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">{step.title}</h3>

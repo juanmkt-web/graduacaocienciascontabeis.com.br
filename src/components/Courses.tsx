@@ -134,19 +134,19 @@ const Courses = () => {
                 {/* Course Info */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center gap-2">
-                    <GraduationCap className="w-5 h-5 text-primary" />
+                    <GraduationCap className="w-5 h-5 text-blue-500" />
                     <span className="text-sm font-medium text-gray-700">Bacharelado</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Monitor className="w-5 h-5 text-primary" />
+                    <Monitor className="w-5 h-5 text-blue-500" />
                     <span className="text-sm font-medium text-gray-700">{courseDetails.modality}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Clock className="w-5 h-5 text-primary" />
+                    <Clock className="w-5 h-5 text-blue-500" />
                     <span className="text-sm font-medium text-gray-700">{courseDetails.hours}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Calendar className="w-5 h-5 text-primary" />
+                    <Calendar className="w-5 h-5 text-blue-500" />
                     <span className="text-sm font-medium text-gray-700">{courseDetails.semesters}</span>
                   </div>
                 </div>
@@ -166,7 +166,7 @@ const Courses = () => {
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button
-                    className="bg-primary hover:bg-primary/90 text-white font-bold rounded-full text-base py-6 flex-1"
+                    className="bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full text-base py-6 flex-1 shadow-[0_0_20px_rgba(59,130,246,0.4)]"
                     asChild
                   >
                     <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
@@ -177,7 +177,7 @@ const Courses = () => {
                     href={courseDetails.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary font-bold text-base border-2 border-primary rounded-full py-3 px-6 hover:bg-primary/10 transition-colors text-center"
+                    className="text-blue-500 font-bold text-base border-2 border-blue-500 rounded-full py-3 px-6 hover:bg-blue-500/10 transition-colors text-center"
                   >
                     SAIBA MAIS
                   </a>
@@ -196,7 +196,7 @@ const Courses = () => {
                 key={index}
                 className="bg-white/10 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-center hover:bg-white/20 transition-colors"
               >
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
                   <area.icon className="w-6 h-6 text-white" />
                 </div>
                 <h4 className="text-white font-bold text-sm lg:text-base mb-1">{area.title}</h4>
