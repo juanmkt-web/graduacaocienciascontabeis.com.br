@@ -3,19 +3,19 @@ import { Search, ClipboardCheck, Rocket } from "lucide-react";
 const steps = [
   {
     icon: Search,
-    title: "Escolha seu Curso",
+    title: "Conheça o Curso",
     description:
-      "Encontre a sua carreira entre nossas diversas opções de Graduações e comece hoje a construir a trajetória que você sempre sonhou.",
+      "Explore todas as informações sobre o Bacharelado em Administração: grade curricular, áreas de atuação e diferenciais da FASUL.",
   },
   {
     icon: ClipboardCheck,
     title: "Faça sua Matrícula",
-    description: "Processo simples e 100% online. Em poucos minutos você já tem acesso à plataforma de estudos.",
+    description: "Processo 100% online e simplificado. Em poucos minutos você já está matriculado e pronto para começar.",
   },
   {
     icon: Rocket,
-    title: "Acelere seu Futuro",
-    description: "Estude no seu ritmo, conclua seu curso e receba seu diploma reconhecido nacionalmente.",
+    title: "Torne-se Administrador",
+    description: "Estude no seu ritmo, conclua seu curso e receba seu diploma de Bacharel em Administração reconhecido pelo MEC.",
   },
 ];
 
@@ -25,10 +25,10 @@ const Steps = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-16 animate-fade-in">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">
-            TRANSFORME SUA CARREIRA EM <span className="gradient-text">3 PASSOS SIMPLES</span>.
+            SUA CARREIRA EM ADMINISTRAÇÃO <span className="gradient-text">EM 3 PASSOS</span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-            O caminho para o sucesso profissional nunca foi tão acessível.
+            O caminho para se tornar um administrador de sucesso começa aqui.
           </p>
         </div>
 

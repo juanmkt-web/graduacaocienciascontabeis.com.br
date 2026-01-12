@@ -1,27 +1,37 @@
-import { Zap, Clock, Calendar, GraduationCap, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Briefcase, TrendingUp, Users, Building2, ArrowRight, CheckCircle2 } from "lucide-react";
+
 const benefits = [
   {
-    icon: Zap,
-    title: "Conclusão acelerada a partir de",
-    highlight: "2 anos",
+    icon: Briefcase,
+    title: "Formação completa em",
+    highlight: "Gestão Empresarial",
   },
   {
-    icon: Clock,
-    title: "Inclusos na sua formação",
-    highlight: "10 Cursos de IA",
+    icon: TrendingUp,
+    title: "Prepare-se para",
+    highlight: "Cargos de Liderança",
   },
   {
-    icon: Calendar,
-    title: "Graduações",
-    highlight: "EAD e Semipresenciais",
+    icon: Users,
+    title: "Desenvolva habilidades em",
+    highlight: "Gestão de Pessoas",
   },
   {
-    icon: GraduationCap,
-    title: "Instituição com",
-    highlight: "Nota Máxima no MEC!",
+    icon: Building2,
+    title: "Atue em empresas de",
+    highlight: "Todos os Portes",
   },
 ];
+
+const highlights = [
+  "Finanças e Contabilidade",
+  "Marketing e Vendas",
+  "Recursos Humanos",
+  "Logística e Operações",
+  "Empreendedorismo",
+  "Gestão Estratégica",
+];
+
 const Benefits = () => {
   return (
     <section className="benefits-section">
@@ -32,17 +42,24 @@ const Benefits = () => {
               {/* Left side - Main Title */}
               <div className="animate-fade-in text-center md:text-left">
                 <h2 className="text-xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 md:mb-6 leading-tight">
-                  A GRADUAÇÃO QUE<span className="text-primary"> TE PREPARA </span>
+                  BACHARELADO EM<span className="text-primary"> ADMINISTRAÇÃO </span>
                   <br />
-                  PARA O FUTURO!
+                  QUE TRANSFORMA CARREIRAS
                 </h2>
-                <p className="text-xs md:text-lg text-white/80 leading-relaxed">
-                  Conclua sua Faculdade <strong className="text-white">A partir de 2 anos </strong>
-                  com a excelência de uma
-                  <strong className="text-white"> Instituição Nota 5 no MEC.</strong>, Garanta seu diferencial
-                  competitivo com <strong className="text-white">10 cursos exclusivos de IA</strong> inclusos e a
-                  flexibilidade que você precisa para estudar.
+                <p className="text-xs md:text-lg text-white/80 leading-relaxed mb-4 md:mb-6">
+                  O curso de Administração da FASUL forma profissionais preparados para liderar, 
+                  inovar e transformar organizações. Com <strong className="text-white">3.200 horas</strong> de 
+                  formação completa e reconhecimento do <strong className="text-white">MEC com nota máxima</strong>.
                 </p>
+                
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
+                  {highlights.map((item, index) => (
+                    <div key={index} className="flex items-center gap-1.5 text-white/90">
+                      <CheckCircle2 className="h-3 w-3 md:h-4 md:w-4 text-primary flex-shrink-0" />
+                      <span className="text-[10px] md:text-sm">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               {/* Right side - Benefits List */}
@@ -73,12 +90,12 @@ const Benefits = () => {
 
                 <div className="pt-4 md:pt-8 ml-4 sm:ml-6 md:ml-10 lg:ml-14">
                   <a
-                    href="https://www.fasuleducacional.edu.br/posgraduacao/cursos"
+                    href="https://www.fasuleducacional.edu.br/graduacao/graduacao-em-administracao-ead"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <button className="benefits-button">
-                      COMECE SUA GRADUAÇÃO AGORA!
+                      QUERO SER ADMINISTRADOR!
                       <ArrowRight className="inline-block ml-2 h-4 w-4 md:h-5 md:w-5" />
                     </button>
                   </a>

@@ -2,29 +2,34 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqItems = [
   {
-    question: "Qual a duração dos cursos de graduação?",
+    question: "Qual a duração do curso de Bacharelado em Administração?",
     answer:
-      "Nossos cursos de graduação têm duração a partir de 2 anos, dependendo da modalidade e área escolhida. Os cursos tecnológicos geralmente são mais curtos, enquanto bacharelados e licenciaturas podem ter durações maiores.",
+      "O curso de Bacharelado em Administração tem duração de 4 anos (8 semestres), com carga horária total de 3.200 horas. É possível concluir em menos tempo através do aproveitamento de disciplinas, caso você já tenha cursado outra graduação.",
   },
   {
-    question: "O diploma é reconhecido pelo MEC?",
+    question: "O diploma de Administração EaD é reconhecido pelo MEC?",
     answer:
-      "Sim! A FASUL é uma instituição com nota 5 no MEC, a nota máxima de avaliação. Todos os nossos diplomas são reconhecidos nacionalmente e têm a mesma validade de cursos presenciais.",
+      "Sim! A FASUL é uma instituição com nota 5 no MEC, a nota máxima de avaliação. O diploma de Bacharelado em Administração tem a mesma validade de cursos presenciais e é reconhecido em todo o território nacional.",
   },
   {
-    question: "Quais são as formas de pagamento disponíveis?",
+    question: "Quais são as áreas de atuação do administrador?",
     answer:
-      "Oferecemos diversas formas de pagamento: boleto bancário, cartão de crédito (com parcelamento), PIX e débito automático. Também temos programas de bolsas e descontos especiais.",
+      "O administrador pode atuar em diversas áreas como: gestão empresarial, finanças, recursos humanos, marketing, logística, consultoria, empreendedorismo, gestão pública, entre outras. É uma das formações mais versáteis do mercado.",
   },
   {
-    question: "Posso transferir meu curso de outra instituição?",
+    question: "Preciso ter experiência prévia em administração?",
     answer:
-      "Sim, aceitamos transferências de outras instituições de ensino superior. As disciplinas cursadas podem ser aproveitadas mediante análise curricular, reduzindo o tempo de conclusão do curso.",
+      "Não é necessário ter experiência prévia. O curso foi desenvolvido para formar profissionais do zero, com disciplinas que vão do básico ao avançado, preparando você para o mercado de trabalho.",
   },
   {
-    question: "Quais são as modalidades disponíveis?",
+    question: "Como funciona o estágio obrigatório?",
     answer:
-      "Oferecemos modalidades EaD e semipresencial, proporcionando flexibilidade para atender às diferentes necessidades dos nossos alunos. Escolha a opção que melhor se adapta à sua rotina!",
+      "O estágio supervisionado pode ser realizado em empresas da sua região. A FASUL oferece todo o suporte para você encontrar oportunidades e desenvolver suas habilidades práticas durante a graduação.",
+  },
+  {
+    question: "Qual o valor do investimento?",
+    answer:
+      "A mensalidade é de apenas R$ 139,00 com valor fixo até o final do curso (sem reajustes). Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento, PIX e débito automático.",
   },
 ];
 
@@ -36,7 +41,7 @@ const FAQ = () => {
           {/* Header */}
           <div className="mb-10 text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-4">PERGUNTAS FREQUENTES</h2>
-            <p className="text-gray-600 text-lg">Tire suas dúvidas sobre a Graduação EaD da FASUL</p>
+            <p className="text-gray-600 text-lg">Tire suas dúvidas sobre o Bacharelado em Administração da FASUL</p>
           </div>
 
           {/* FAQ Accordion */}

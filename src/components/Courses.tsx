@@ -1,352 +1,106 @@
 import { useState } from "react";
-import { GraduationCap, Monitor, Clock, Calendar, Gift } from "lucide-react";
+import { GraduationCap, Monitor, Clock, Calendar, BookOpen, Briefcase, TrendingUp, Users, BarChart3, Building2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-// Import course images
 import cursoAdministracao from "@/assets/curso-administracao.jpg";
-import cursoAnaliseSistemas from "@/assets/curso-analise-sistemas.jpg";
-import cursoRh from "@/assets/curso-rh.jpg";
-import cursoPedagogia from "@/assets/curso-pedagogia.jpg";
-import cursoTi from "@/assets/curso-ti.jpg";
-import cursoImobiliario from "@/assets/curso-imobiliario.jpg";
-import cursoLogistica from "@/assets/curso-logistica-grad.jpg";
-import cursoProcessos from "@/assets/curso-processos.jpg";
-import cursoMarketing from "@/assets/curso-marketing-grad.jpg";
-import cursoContabeis from "@/assets/curso-contabeis.jpg";
-import cursoComercial from "@/assets/curso-comercial.jpg";
-import cursoSeguranca from "@/assets/curso-seguranca.jpg";
-import cursoPublica from "@/assets/curso-publica.jpg";
-import cursoSocial from "@/assets/curso-social.jpg";
-import cursoMarketingDigital from "@/assets/curso-marketing-digital.jpg";
-import cursoFinanceira from "@/assets/curso-financeira.jpg";
 
-interface Course {
-  title: string;
-  type: "GRADUAÇÃO";
-  modality: "EAD" | "SEMIPRESENCIAL";
-  hours: string;
-  semesters: string;
-  promoPrice: string;
-  regularPrice: string;
-  badge?: string;
-  highlight?: string;
-  isLaunchingSoon?: boolean;
-  image: string;
-  url: string;
-}
+const courseDetails = {
+  title: "Bacharelado em Administração",
+  modality: "EAD",
+  hours: "3.200 HORAS",
+  semesters: "8 SEMESTRES",
+  promoPrice: "R$ 139,00",
+  regularPrice: "R$ 329,00",
+  image: cursoAdministracao,
+  url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-administracao-ead",
+  description: "O curso de Bacharelado em Administração da FASUL prepara profissionais para atuar em todas as áreas da gestão empresarial, desenvolvendo competências em planejamento estratégico, finanças, marketing, recursos humanos e operações.",
+};
 
-const courses: Course[] = [
+const curriculumModules = [
   {
-    title: "Administração",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "3.200 HORAS",
-    semesters: "8 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    image: cursoAdministracao,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-administracao-ead",
+    semester: "1º Semestre",
+    subjects: [
+      "Fundamentos de Administração",
+      "Matemática Aplicada",
+      "Comunicação Empresarial",
+      "Metodologia Científica",
+    ],
   },
   {
-    title: "Análise e desenvolvimento de sistemas",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "2.120 HORAS",
-    semesters: "5 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    highlight: "DESTAQUE PARA FULL STACK DEVELOPER",
-    image: cursoAnaliseSistemas,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-analise-e-desenvolvimento-de-sistemas-ead",
+    semester: "2º Semestre",
+    subjects: [
+      "Teoria Geral da Administração",
+      "Contabilidade Básica",
+      "Economia",
+      "Sociologia Organizacional",
+    ],
   },
   {
-    title: "Gestão de recursos humanos",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "1.720 HORAS",
-    semesters: "4 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    image: cursoRh,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-gestao-de-recursos-humanos-ead",
+    semester: "3º Semestre",
+    subjects: [
+      "Gestão de Pessoas",
+      "Marketing I",
+      "Estatística Aplicada",
+      "Direito Empresarial",
+    ],
   },
   {
-    title: "Pedagogia",
-    type: "GRADUAÇÃO",
-    modality: "SEMIPRESENCIAL",
-    hours: "3.200 HORAS",
-    semesters: "8 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    isLaunchingSoon: true,
-    image: cursoPedagogia,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-pedagogia-ead",
+    semester: "4º Semestre",
+    subjects: [
+      "Administração Financeira I",
+      "Marketing II",
+      "Gestão de Processos",
+      "Comportamento Organizacional",
+    ],
   },
   {
-    title: "Gestão da tecnologia da informação",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "2.120 HORAS",
-    semesters: "5 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    highlight: "GANHE 1 PÓS COM DESTAQUE EM I.A.",
-    image: cursoTi,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-gestao-da-tecnologia-da-informacao-ead",
+    semester: "5º Semestre",
+    subjects: [
+      "Administração Financeira II",
+      "Gestão da Produção",
+      "Logística Empresarial",
+      "Sistemas de Informação",
+    ],
   },
   {
-    title: "Negócios imobiliários",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "1.720 HORAS",
-    semesters: "4 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    image: cursoImobiliario,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-negocios-imobiliarios-ead",
+    semester: "6º Semestre",
+    subjects: [
+      "Planejamento Estratégico",
+      "Gestão de Projetos",
+      "Empreendedorismo",
+      "Administração Pública",
+    ],
   },
   {
-    title: "Logística",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "1.720 HORAS",
-    semesters: "4 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    image: cursoLogistica,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-tecnologia-em-logistica-ead",
+    semester: "7º Semestre",
+    subjects: [
+      "Gestão da Qualidade",
+      "Comércio Exterior",
+      "Consultoria Empresarial",
+      "Ética e Responsabilidade Social",
+    ],
   },
   {
-    title: "Processos gerenciais",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "1.720 HORAS",
-    semesters: "4 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    image: cursoProcessos,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-processos-gerenciais",
-  },
-  {
-    title: "Gestão de marketing",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "1.720 HORAS",
-    semesters: "4 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    image: cursoMarketing,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-gestao-de-marketing",
-  },
-  {
-    title: "Ciências contábeis",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "3.200 HORAS",
-    semesters: "8 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    image: cursoContabeis,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-ciencias-contabeis",
-  },
-  {
-    title: "Gestão comercial",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "1.720 HORAS",
-    semesters: "4 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    image: cursoComercial,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-gestao-comercial",
-  },
-  {
-    title: "Segurança pública",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "1.720 HORAS",
-    semesters: "4 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    image: cursoSeguranca,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-seguranca-publica",
-  },
-  {
-    title: "Gestão pública",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "1.720 HORAS",
-    semesters: "4 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    image: cursoPublica,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-gestao-publica",
-  },
-  {
-    title: "Serviço social",
-    type: "GRADUAÇÃO",
-    modality: "SEMIPRESENCIAL",
-    hours: "3.200 HORAS",
-    semesters: "8 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    image: cursoSocial,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-servico-social",
-  },
-  {
-    title: "Marketing Digital",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "3.510 HORAS",
-    semesters: "8 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    isLaunchingSoon: true,
-    image: cursoMarketingDigital,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-marketing-digital-ead",
-  },
-  {
-    title: "Gestão financeira",
-    type: "GRADUAÇÃO",
-    modality: "EAD",
-    hours: "1.720 HORAS",
-    semesters: "4 SEMESTRES",
-    promoPrice: "R$ 139,00",
-    regularPrice: "R$ 329,00",
-    badge: "GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO",
-    image: cursoFinanceira,
-    url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-gestao-financeira",
+    semester: "8º Semestre",
+    subjects: [
+      "Trabalho de Conclusão de Curso",
+      "Estágio Supervisionado",
+      "Gestão da Inovação",
+      "Tópicos Avançados em Administração",
+    ],
   },
 ];
 
-const CourseCard = ({ course, index }: { course: Course; index: number }) => {
-  return (
-    <div
-      className="bg-white rounded-2xl shadow-lg overflow-hidden animate-fade-in group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
-      style={{ animationDelay: `${(index % 6) * 0.1}s` }}
-    >
-      {/* Course Image */}
-      <div className="relative h-48 overflow-hidden">
-        <img
-          src={course.image}
-          alt={course.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
-        {/* Badge overlay - positioned at bottom edge of image */}
-        <div className="absolute bottom-1 left-3 right-3 flex justify-center z-10">
-          {course.isLaunchingSoon ? (
-            <span className="bg-gray-200/95 backdrop-blur-sm text-gray-700 text-[10px] font-bold px-3 py-1.5 rounded-full shadow-lg">
-              LANÇAMENTO EM BREVE
-            </span>
-          ) : course.badge ? (
-            <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1 shadow-lg">
-              <Gift className="w-3 h-3" />
-              {course.badge}
-            </span>
-          ) : null}
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="p-5 flex-1 flex flex-col">
-        {/* Highlight badge */}
-        {course.highlight && (
-          <span className="inline-block bg-yellow-400 text-gray-900 text-[10px] font-bold px-3 py-1 rounded mb-2 w-fit">
-            {course.highlight}
-          </span>
-        )}
-
-        {/* Title */}
-        <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-3 uppercase leading-tight min-h-[3rem]">
-          {course.title}
-        </h3>
-
-        {/* Course Info Grid */}
-        <div className="grid grid-cols-2 gap-2 mb-4">
-          <div className="flex items-center gap-1.5 text-gray-600">
-            <GraduationCap className="w-4 h-4 text-primary" />
-            <span className="text-xs font-medium">{course.type}</span>
-          </div>
-          <div className="flex items-center gap-1.5 text-gray-600">
-            <Monitor className="w-4 h-4 text-primary" />
-            <span className="text-xs font-medium">{course.modality}</span>
-          </div>
-          <div className="flex items-center gap-1.5 text-gray-600">
-            <Clock className="w-4 h-4 text-primary" />
-            <span className="text-xs font-medium">{course.hours}</span>
-          </div>
-          <div className="flex items-center gap-1.5 text-gray-600">
-            <Calendar className="w-4 h-4 text-primary" />
-            <span className="text-xs font-medium">{course.semesters}</span>
-          </div>
-        </div>
-
-        {/* Pricing */}
-        <div className="mb-4 mt-auto">
-          <div className="flex items-center justify-between mb-1">
-            <p className="text-2xl font-bold text-gray-900">
-              {course.promoPrice}
-              <span className="text-base font-bold text-gray-900">/Mês</span>
-            </p>
-            <p className="text-gray-400 line-through text-sm">{course.regularPrice}/Mês</p>
-          </div>
-          <span className="text-[10px] bg-gradient-to-r from-emerald-500 to-teal-400 text-white px-2 py-0.5 rounded font-semibold inline-block">
-            ATÉ O FINAL DO CURSO
-          </span>
-        </div>
-
-        {/* Actions */}
-        <div className="flex justify-between items-center">
-          <a
-            href={course.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary font-bold text-sm border-2 border-primary rounded-full py-2 px-6 hover:bg-primary/10 transition-colors flex-shrink-0"
-          >
-            SAIBA MAIS
-          </a>
-          <Button
-            className="bg-primary hover:bg-primary/90 text-white font-bold rounded-full text-sm py-2 px-6"
-            asChild
-          >
-            <a href={course.url} target="_blank" rel="noopener noreferrer">
-              INSCREVA-SE
-            </a>
-          </Button>
-        </div>
-      </div>
-    </div>
-  );
-};
+const careerAreas = [
+  { icon: Briefcase, title: "Gestão Empresarial", description: "Gerencie empresas e tome decisões estratégicas" },
+  { icon: TrendingUp, title: "Finanças", description: "Atue em bancos, corretoras e departamentos financeiros" },
+  { icon: Users, title: "Recursos Humanos", description: "Desenvolva e gerencie equipes de alto desempenho" },
+  { icon: BarChart3, title: "Marketing", description: "Crie estratégias para posicionar marcas no mercado" },
+  { icon: Building2, title: "Consultoria", description: "Ofereça soluções para empresas de todos os portes" },
+  { icon: BookOpen, title: "Empreendedorismo", description: "Abra e gerencie seu próprio negócio" },
+];
 
 const Courses = () => {
-  const [visibleCount, setVisibleCount] = useState(() => {
-    if (typeof window !== "undefined" && window.innerWidth >= 1024) {
-      return 6;
-    }
-    return 4;
-  });
-
-  const loadMore = () => {
-    const increment = window.innerWidth >= 1024 ? 6 : 4;
-    setVisibleCount((prev) => Math.min(prev + increment, courses.length));
-  };
-
-  const visibleCourses = courses.slice(0, visibleCount);
-  const hasMore = visibleCount < courses.length;
+  const [expandedSemester, setExpandedSemester] = useState<number | null>(null);
 
   return (
     <section id="cursos" className="pb-24 gradient-animated relative">
@@ -365,33 +119,154 @@ const Courses = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10 pt-16">
-        <div className="text-center mb-16 text-white animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">ESCOLHA SUA GRADUAÇÃO</h2>
-          <p className="text-lg text-white/90 max-w-4xl mx-auto leading-relaxed">
-            Dê o próximo passo na sua jornada acadêmica com quem é referência em Ensino. Conheça nossas opções de Cursos
-            EAD e Semipresenciais feitos para se encaixar na sua rotina.
+        {/* Header */}
+        <div className="text-center mb-12 text-white animate-fade-in">
+          <h2 className="text-3xl lg:text-5xl font-bold mb-4">CONHEÇA O CURSO</h2>
+          <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
+            O Bacharelado em Administração é um dos cursos mais versáteis do mercado, 
+            abrindo portas para diversas áreas de atuação profissional.
           </p>
         </div>
 
-        {/* Grid - 3 cols desktop, 2 cols tablet, 1 col mobile */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {visibleCourses.map((course, index) => (
-            <CourseCard key={course.title} course={course} index={index} />
-          ))}
+        {/* Main Course Card */}
+        <div className="max-w-6xl mx-auto mb-16">
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div className="grid lg:grid-cols-2">
+              {/* Image Side */}
+              <div className="relative h-64 lg:h-auto">
+                <img
+                  src={courseDetails.image}
+                  alt={courseDetails.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:bg-gradient-to-r" />
+                <div className="absolute bottom-4 left-4 right-4 lg:bottom-8 lg:left-8">
+                  <span className="inline-block bg-primary text-white text-sm font-bold px-4 py-2 rounded-full mb-2">
+                    NOTA 5 NO MEC
+                  </span>
+                </div>
+              </div>
+
+              {/* Content Side */}
+              <div className="p-6 lg:p-10">
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                  {courseDetails.title}
+                </h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  {courseDetails.description}
+                </p>
+
+                {/* Course Info */}
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="flex items-center gap-2">
+                    <GraduationCap className="w-5 h-5 text-primary" />
+                    <span className="text-sm font-medium text-gray-700">Bacharelado</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Monitor className="w-5 h-5 text-primary" />
+                    <span className="text-sm font-medium text-gray-700">{courseDetails.modality}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-5 h-5 text-primary" />
+                    <span className="text-sm font-medium text-gray-700">{courseDetails.hours}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-5 h-5 text-primary" />
+                    <span className="text-sm font-medium text-gray-700">{courseDetails.semesters}</span>
+                  </div>
+                </div>
+
+                {/* Pricing */}
+                <div className="bg-gray-50 rounded-xl p-4 mb-6">
+                  <div className="flex items-baseline gap-2 mb-1">
+                    <span className="text-3xl font-bold text-gray-900">{courseDetails.promoPrice}</span>
+                    <span className="text-lg text-gray-900">/mês</span>
+                    <span className="text-gray-400 line-through ml-2">{courseDetails.regularPrice}</span>
+                  </div>
+                  <span className="inline-block text-xs bg-gradient-to-r from-emerald-500 to-teal-400 text-white px-3 py-1 rounded-full font-semibold">
+                    VALOR FIXO ATÉ O FINAL DO CURSO
+                  </span>
+                </div>
+
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button
+                    className="bg-primary hover:bg-primary/90 text-white font-bold rounded-full text-base py-6 flex-1"
+                    asChild
+                  >
+                    <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
+                      MATRICULE-SE AGORA <ArrowRight className="ml-2 h-5 w-5" />
+                    </a>
+                  </Button>
+                  <a
+                    href={courseDetails.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary font-bold text-base border-2 border-primary rounded-full py-3 px-6 hover:bg-primary/10 transition-colors text-center"
+                  >
+                    SAIBA MAIS
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Load More Button */}
-        {hasMore && (
-          <div className="text-center mt-10 animate-fade-in">
-            <Button
-              onClick={loadMore}
-              variant="outline"
-              className="bg-white/10 border-2 border-white text-white hover:bg-white hover:text-primary font-bold px-10 py-6 text-lg rounded-full transition-all duration-300"
-            >
-              VER MAIS CURSOS
-            </Button>
+        {/* Career Areas */}
+        <div className="max-w-6xl mx-auto mb-16">
+          <h3 className="text-2xl lg:text-3xl font-bold text-white text-center mb-8">
+            ÁREAS DE ATUAÇÃO
+          </h3>
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            {careerAreas.map((area, index) => (
+              <div
+                key={index}
+                className="bg-white/10 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-center hover:bg-white/20 transition-colors"
+              >
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                  <area.icon className="w-6 h-6 text-white" />
+                </div>
+                <h4 className="text-white font-bold text-sm lg:text-base mb-1">{area.title}</h4>
+                <p className="text-white/70 text-xs lg:text-sm">{area.description}</p>
+              </div>
+            ))}
           </div>
-        )}
+        </div>
+
+        {/* Curriculum */}
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-2xl lg:text-3xl font-bold text-white text-center mb-8">
+            GRADE CURRICULAR
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {curriculumModules.map((module, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl overflow-hidden shadow-lg"
+              >
+                <button
+                  onClick={() => setExpandedSemester(expandedSemester === index ? null : index)}
+                  className="w-full px-5 py-4 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors"
+                >
+                  <span className="font-bold text-gray-900">{module.semester}</span>
+                  <span className={`transform transition-transform ${expandedSemester === index ? 'rotate-180' : ''}`}>
+                    ▼
+                  </span>
+                </button>
+                <div className={`overflow-hidden transition-all duration-300 ${expandedSemester === index ? 'max-h-48' : 'max-h-0'}`}>
+                  <ul className="p-4 space-y-2">
+                    {module.subjects.map((subject, subIndex) => (
+                      <li key={subIndex} className="flex items-center gap-2 text-gray-700 text-sm">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full" />
+                        {subject}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20">

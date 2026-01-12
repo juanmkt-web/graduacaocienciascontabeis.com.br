@@ -8,22 +8,25 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Eu tentava aprender programar vendo vídeo no YouTube, mas me perdia. O curso me deu o caminho certo, do básico ao avançado. No terceiro período já passei num processo seletivo. Hoje sou Dev Júnior, trabalho de casa e finalmente tenho um salário digno.",
+      "Sempre sonhei em abrir meu próprio negócio, mas não sabia por onde começar. O curso de Administração me deu toda a base que eu precisava: finanças, marketing, gestão de pessoas. Hoje tenho minha loja e aplico tudo que aprendi no dia a dia.",
     name: "Roberta Maia",
+    role: "Empreendedora",
     photo: robertaFoto,
   },
   {
     id: 2,
     quote:
-      "Eu trabalhava no administrativo, mas morria de medo de errar cálculo de férias e rescisão, porque a lei é complicada. A faculdade me deu segurança total na legislação trabalhista. Quando a vaga de Analista de RH abriu, eu estava pronta e fui a escolhida.",
+      "Trabalhava como auxiliar administrativo há anos e não conseguia crescer. Depois de me formar em Administração, fui promovido a coordenador e hoje ganho o dobro do que ganhava antes. O investimento valeu cada centavo.",
     name: "Paulo Silva",
+    role: "Coordenador Administrativo",
     photo: pauloFoto,
   },
   {
     id: 3,
     quote:
-      "Ser técnico é bom, mas tem um teto salarial. Eu queria subir de nível, parar de formatar máquina e começar a gerenciar projetos. A graduação em Gestão de TI mudou minha visão. Hoje converso de igual para igual com a diretoria e lidero toda a infraestrutura da empresa.",
+      "O curso me preparou para assumir a gestão da empresa da família. Aprendi a profissionalizar os processos, criar indicadores e tomar decisões baseadas em dados. Hoje a empresa cresceu 40% em faturamento.",
     name: "João Lima",
+    role: "Gestor Empresarial",
     photo: joaoFoto,
   },
 ];
@@ -62,10 +65,10 @@ const Testimonials = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-6 md:mb-12 animate-fade-in text-white">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4">
-            CARREIRAS QUE <span className="text-[#F97A1F]">DECOLARAM</span>.
+            ADMINISTRADORES <span className="text-primary">DE SUCESSO</span>
           </h2>
           <p className="text-sm md:text-lg text-white/90 max-w-3xl mx-auto">
-            Veja o que nossos alunos dizem sobre a experiência Fasul.
+            Veja como o curso de Administração transformou a carreira dos nossos alunos.
           </p>
         </div>
 
@@ -97,7 +100,7 @@ const Testimonials = () => {
             className="glass-effect rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-12 shadow-2xl animate-fade-in block mx-8 md:mx-12"
             key={currentTestimonial.id}
           >
-            <Quote className="h-8 w-8 md:h-12 md:w-12 text-cyan-light mb-3 md:mb-6" />
+            <Quote className="h-8 w-8 md:h-12 md:w-12 text-primary mb-3 md:mb-6" />
             <p className="text-base md:text-xl lg:text-2xl text-white mb-5 md:mb-8 leading-relaxed italic font-light">
               "{currentTestimonial.quote}"
             </p>
@@ -105,10 +108,11 @@ const Testimonials = () => {
               <img
                 src={currentTestimonial.photo}
                 alt={currentTestimonial.name}
-                className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-cyan-light object-cover"
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-primary object-cover"
               />
               <div className="text-white">
                 <p className="font-bold text-lg md:text-xl">{currentTestimonial.name}</p>
+                <p className="text-white/70 text-sm">{currentTestimonial.role}</p>
               </div>
             </div>
           </div>
@@ -119,7 +123,7 @@ const Testimonials = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`h-2 rounded-full transition-all ${
-                  index === currentIndex ? "w-8 bg-cyan-light" : "w-2 bg-white/40"
+                  index === currentIndex ? "w-8 bg-primary" : "w-2 bg-white/40"
                 }`}
                 aria-label={`Ir para depoimento ${index + 1}`}
               />
@@ -134,7 +138,7 @@ const Testimonials = () => {
               key={testimonial.id}
               className="glass-effect rounded-2xl p-5 ultrawide:p-[22px] shadow-2xl animate-fade-in flex flex-col h-full"
             >
-              <Quote className="h-6 w-6 ultrawide:h-7 ultrawide:w-7 text-cyan-light mb-3 ultrawide:mb-[13px]" />
+              <Quote className="h-6 w-6 ultrawide:h-7 ultrawide:w-7 text-primary mb-3 ultrawide:mb-[13px]" />
               <p className="text-sm wide:text-[17px] ultrawide:text-[19px] text-white mb-4 ultrawide:mb-[18px] leading-relaxed italic font-light flex-grow">
                 "{testimonial.quote}"
               </p>
@@ -142,10 +146,11 @@ const Testimonials = () => {
                 <img
                   src={testimonial.photo}
                   alt={testimonial.name}
-                  className="w-12 h-12 ultrawide:w-[54px] ultrawide:h-[54px] rounded-full border-2 border-cyan-light object-cover"
+                  className="w-12 h-12 ultrawide:w-[54px] ultrawide:h-[54px] rounded-full border-2 border-primary object-cover"
                 />
                 <div className="text-white">
                   <p className="font-bold text-sm ultrawide:text-[16px]">{testimonial.name}</p>
+                  <p className="text-white/60 text-xs">{testimonial.role}</p>
                 </div>
               </div>
             </div>

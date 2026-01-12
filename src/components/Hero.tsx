@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Award, Users } from "lucide-react";
+import { ArrowRight, Award, Users, BookOpen } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
@@ -30,23 +30,27 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-4 md:py-12 relative z-10">
         <div className="max-w-2xl mb-6 md:mb-12">
           <div className="text-white animate-fade-in text-center md:text-left">
+            <div className="inline-block bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full px-4 py-1.5 mb-4">
+              <span className="text-primary font-semibold text-sm">BACHARELADO EM ADMINISTRAÇÃO</span>
+            </div>
+            
             <h1
               className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-4 md:mb-6 leading-tight"
               style={{
                 textShadow: "2px 2px 8px rgba(0, 0, 0, 0.2)",
               }}
             >
-              SEU CURRÍCULO<span className="text-primary"> POTENCIALIZADO</span> PELA INTELIGÊNCIA ARTIFICIAL.
+              FORME-SE EM <span className="text-primary">ADMINISTRAÇÃO</span> E LIDERE O MERCADO
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
-              Diplomas do passado não garantem mais vagas. Conquiste sua Graduação ágil com Certificação em IA e esteja
-              pronto para o que as empresas realmente buscam hoje.
+              Desenvolva competências estratégicas em gestão, finanças, marketing e liderança. 
+              Prepare-se para gerenciar empresas e tomar decisões que transformam negócios.
             </p>
 
             <div className="mb-5 md:mb-8 flex justify-center md:justify-start">
               <a
-                href="https://www.fasuleducacional.edu.br/posgraduacao/cursos"
+                href="https://www.fasuleducacional.edu.br/graduacao/graduacao-em-administracao-ead"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -54,18 +58,22 @@ const Hero = () => {
                   size="lg"
                   className="bg-primary text-primary-foreground hover:bg-primary/80 font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 animate-pulse-cta w-full md:w-auto"
                 >
-                  GARANTIR MEU FUTURO <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                  QUERO ME INSCREVER <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
               </a>
             </div>
 
-            <div className="flex flex-row gap-3 md:gap-6 justify-center md:justify-start">
+            <div className="flex flex-row gap-3 md:gap-6 justify-center md:justify-start flex-wrap">
               <div className="flex items-center gap-1 md:gap-2">
-                <Award className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                <Award className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-primary" />
                 <span className="text-xs md:text-sm font-medium">Diploma MEC</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
-                <Users className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                <BookOpen className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-primary" />
+                <span className="text-xs md:text-sm font-medium">8 Semestres</span>
+              </div>
+              <div className="flex items-center gap-1 md:gap-2">
+                <Users className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-primary" />
                 <span className="text-xs md:text-sm font-medium">+10 mil Alunos</span>
               </div>
             </div>
