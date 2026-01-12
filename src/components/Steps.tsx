@@ -25,7 +25,7 @@ const Steps = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-16 animate-fade-in">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">
-            SUA CARREIRA EM ADMINISTRAÇÃO <span className="gradient-text">EM 3 PASSOS</span>
+            SUA CARREIRA EM ADMINISTRAÇÃO <span className="text-blue-600 font-extrabold">EM 3 PASSOS</span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             O caminho para se tornar um administrador de sucesso começa aqui.
@@ -43,7 +43,7 @@ const Steps = () => {
                   </div>
                 </div>
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-1/2 left-[60%] w-full h-0.5 bg-gradient-to-r from-blue-500 to-blue-500/20 z-0"></div>
+                  <div className="hidden md:block absolute top-1/2 left-[60%] w-full h-0.5 bg-gradient-to-r from-blue-600 to-blue-600/20 z-0"></div>
                 )}
               </div>
               <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">{step.title}</h3>
