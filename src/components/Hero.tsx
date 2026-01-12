@@ -5,7 +5,7 @@ import heroBackground from "@/assets/hero-background.jpg";
 const Hero = () => {
   return (
     <section 
-      className="relative flex items-center overflow-hidden pt-[72px] pb-8 md:pt-[112px] md:pb-16"
+      className="relative flex items-center overflow-hidden pt-[72px] pb-3 md:pt-[112px] md:pb-6"
       style={{
         backgroundImage: `url(${heroBackground})`,
         backgroundSize: 'cover',
@@ -13,7 +13,7 @@ const Hero = () => {
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-dark-blue/95 via-dark-blue/60 via-50% to-transparent to-70%"></div>
-      <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20">
+      <div className="absolute bottom-0 left-0 right-0 h-4 md:h-6 lg:h-8">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
