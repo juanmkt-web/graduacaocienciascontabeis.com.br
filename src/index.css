@@ -17,15 +17,15 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    /* Brand colors - Coral Amarelado palette */
-    --primary: 25 95% 55%;
+    /* Brand colors - Blue palette */
+    --primary: 217 91% 53%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 35 100% 50%;
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
     
-    /* Coral light for benefits section */
-    --cyan-light: 25 85% 60%;
+    /* Blue light for benefits section */
+    --cyan-light: 217 85% 58%;
     --cyan-light-foreground: 0 0% 100%;
 
     /* Dark blue for backgrounds */
@@ -34,8 +34,8 @@ All colors MUST be HSL.
     --muted: 260 15% 96%;
     --muted-foreground: 260 20% 40%;
 
-    /* CTA - Coral Amarelado */
-    --accent: 25 95% 55%;
+    /* CTA - Blue */
+    --accent: 217 91% 53%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -92,16 +92,16 @@ All colors MUST be HSL.
     --popover: 0 0% 13%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 25 95% 55%;
+    --primary: 217 91% 53%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 100% 50%;
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 260 20% 18%;
     --muted-foreground: 260 15% 70%;
 
-    --accent: 25 95% 55%;
+    --accent: 217 91% 53%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
@@ -159,7 +159,7 @@ All colors MUST be HSL.
   
   /* Gradient text */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    background: linear-gradient(135deg, hsl(217 91% 53%), hsl(217 91% 65%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
