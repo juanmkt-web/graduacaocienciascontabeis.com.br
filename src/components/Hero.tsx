@@ -4,12 +4,12 @@ import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   return (
-    <section 
-      className="relative flex items-center overflow-hidden pt-[72px] pb-3 md:pt-[112px] md:pb-6"
+    <section
+      className="relative flex items-center overflow-hidden pt-[72px] pb-8 md:pt-[112px] md:pb-16"
       style={{
         backgroundImage: `url(${heroBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center right',
+        backgroundSize: "cover",
+        backgroundPosition: "center right",
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-dark-blue/95 via-dark-blue/60 via-50% to-transparent to-70%"></div>
@@ -30,22 +30,22 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-4 md:py-12 relative z-10">
         <div className="max-w-2xl mb-6 md:mb-12">
           <div className="text-white animate-fade-in text-center md:text-left">
-            <div className="inline-block bg-blue-600/20 backdrop-blur-sm border border-blue-500/30 rounded-full px-4 py-1.5 mb-4">
-              <span className="text-blue-500 font-semibold text-sm">BACHARELADO EM ADMINISTRAÇÃO</span>
+            <div className="inline-block bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-4 py-1.5 mb-4">
+              <span className="text-blue-400 font-semibold text-sm">BACHARELADO EM ADMINISTRAÇÃO</span>
             </div>
-            
+
             <h1
               className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-4 md:mb-6 leading-tight"
               style={{
                 textShadow: "2px 2px 8px rgba(0, 0, 0, 0.2)",
               }}
             >
-              FORME-SE EM <span className="text-blue-500">ADMINISTRAÇÃO</span> E LIDERE O MERCADO
+              TORNE-SE EXPERT EM <span className="text-blue-400">NEGÓCIOS E GESTÃO</span> E LIDERE O MERCADO
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
-              Desenvolva competências estratégicas em gestão, finanças, marketing e liderança. 
-              Prepare-se para gerenciar empresas e tomar decisões que transformam negócios.
+              Desenvolva competências estratégicas em gestão, finanças, marketing e liderança. Prepare-se para gerenciar
+              empresas e tomar decisões que transformam negócios.
             </p>
 
             <div className="mb-5 md:mb-8 flex justify-center md:justify-start">
@@ -56,7 +56,7 @@ const Hero = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-blue-600 text-white hover:bg-blue-700 font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-[0_0_20px_rgba(37,99,235,0.6)] hover:shadow-[0_0_30px_rgba(37,99,235,0.8)] transition-all hover:-translate-y-1 animate-pulse-cta w-full md:w-auto"
+                  className="bg-blue-500 text-white hover:bg-blue-600 font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:shadow-[0_0_30px_rgba(59,130,246,0.7)] transition-all hover:-translate-y-1 animate-pulse-cta w-full md:w-auto"
                 >
                   QUERO ME INSCREVER <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
@@ -65,15 +65,15 @@ const Hero = () => {
 
             <div className="flex flex-row gap-3 md:gap-6 justify-center md:justify-start flex-wrap">
               <div className="flex items-center gap-1 md:gap-2">
-                <Award className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-500" />
+                <Award className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-400" />
                 <span className="text-xs md:text-sm font-medium">Diploma MEC</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
-                <BookOpen className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-500" />
+                <BookOpen className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-400" />
                 <span className="text-xs md:text-sm font-medium">8 Semestres</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
-                <Users className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-500" />
+                <Users className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-400" />
                 <span className="text-xs md:text-sm font-medium">+10 mil Alunos</span>
               </div>
             </div>
