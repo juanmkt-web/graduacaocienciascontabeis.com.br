@@ -62,7 +62,7 @@ const CTA = () => {
               <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-3 md:mb-6">
                 GARANTA SUA VAGA NO
                 <br />
-                <span className="text-primary">BACHARELADO EM ADMINISTRAÇÃO</span>
+                <span className="text-blue-400">BACHARELADO EM ADMINISTRAÇÃO</span>
               </h2>
               <p className="text-base md:text-xl text-white/90 max-w-2xl mx-auto">
                 Aproveite condições especiais e comece sua jornada para se tornar um administrador de sucesso.
@@ -107,7 +107,7 @@ const CTA = () => {
             <a href="https://www.fasuleducacional.edu.br/graduacao/graduacao-em-administracao-ead" target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/80 font-bold text-sm md:text-xl px-6 md:px-12 py-5 md:py-8 rounded-full shadow-2xl animate-pulse-cta mb-4 md:mb-8 w-full md:w-auto max-w-full whitespace-normal"
+                className="bg-blue-500 text-white hover:bg-blue-600 font-bold text-sm md:text-xl px-6 md:px-12 py-5 md:py-8 rounded-full shadow-[0_0_25px_rgba(59,130,246,0.5)] hover:shadow-[0_0_35px_rgba(59,130,246,0.7)] animate-pulse-cta mb-4 md:mb-8 w-full md:w-auto max-w-full whitespace-normal"
               >
                 QUERO ME MATRICULAR AGORA!{" "}
                 <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
@@ -116,11 +116,11 @@ const CTA = () => {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-6 text-xs md:text-sm text-white mt-4 md:mt-8">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-primary" />
+                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-blue-400" />
                 <span>Mensalidade fixa de R$ 139/mês</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-primary" />
+                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-blue-400" />
                 <span>Diploma reconhecido pelo MEC</span>
               </div>
             </div>

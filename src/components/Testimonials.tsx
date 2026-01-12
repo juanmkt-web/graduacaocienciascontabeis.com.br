@@ -65,7 +65,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-6 md:mb-12 animate-fade-in text-white">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4">
-            ADMINISTRADORES <span className="text-primary">DE SUCESSO</span>
+            ADMINISTRADORES <span className="text-blue-400">DE SUCESSO</span>
           </h2>
           <p className="text-sm md:text-lg text-white/90 max-w-3xl mx-auto">
             Veja como o curso de Administração transformou a carreira dos nossos alunos.
@@ -100,7 +100,7 @@ const Testimonials = () => {
             className="glass-effect rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-12 shadow-2xl animate-fade-in block mx-8 md:mx-12"
             key={currentTestimonial.id}
           >
-            <Quote className="h-8 w-8 md:h-12 md:w-12 text-primary mb-3 md:mb-6" />
+            <Quote className="h-8 w-8 md:h-12 md:w-12 text-blue-400 mb-3 md:mb-6" />
             <p className="text-base md:text-xl lg:text-2xl text-white mb-5 md:mb-8 leading-relaxed italic font-light">
               "{currentTestimonial.quote}"
             </p>
@@ -108,7 +108,7 @@ const Testimonials = () => {
               <img
                 src={currentTestimonial.photo}
                 alt={currentTestimonial.name}
-                className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-primary object-cover"
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-blue-400 object-cover"
               />
               <div className="text-white">
                 <p className="font-bold text-lg md:text-xl">{currentTestimonial.name}</p>
@@ -123,7 +123,7 @@ const Testimonials = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`h-2 rounded-full transition-all ${
-                  index === currentIndex ? "w-8 bg-primary" : "w-2 bg-white/40"
+                  index === currentIndex ? "w-8 bg-blue-500" : "w-2 bg-white/40"
                 }`}
                 aria-label={`Ir para depoimento ${index + 1}`}
               />
@@ -138,7 +138,7 @@ const Testimonials = () => {
               key={testimonial.id}
               className="glass-effect rounded-2xl p-5 ultrawide:p-[22px] shadow-2xl animate-fade-in flex flex-col h-full"
             >
-              <Quote className="h-6 w-6 ultrawide:h-7 ultrawide:w-7 text-primary mb-3 ultrawide:mb-[13px]" />
+              <Quote className="h-6 w-6 ultrawide:h-7 ultrawide:w-7 text-blue-400 mb-3 ultrawide:mb-[13px]" />
               <p className="text-sm wide:text-[17px] ultrawide:text-[19px] text-white mb-4 ultrawide:mb-[18px] leading-relaxed italic font-light flex-grow">
                 "{testimonial.quote}"
               </p>
@@ -146,7 +146,7 @@ const Testimonials = () => {
                 <img
                   src={testimonial.photo}
                   alt={testimonial.name}
-                  className="w-12 h-12 ultrawide:w-[54px] ultrawide:h-[54px] rounded-full border-2 border-primary object-cover"
+                  className="w-12 h-12 ultrawide:w-[54px] ultrawide:h-[54px] rounded-full border-2 border-blue-400 object-cover"
                 />
                 <div className="text-white">
                   <p className="font-bold text-sm ultrawide:text-[16px]">{testimonial.name}</p>
