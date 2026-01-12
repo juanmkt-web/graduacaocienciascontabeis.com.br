@@ -37,7 +37,7 @@ const Benefits = () => {
                 <h2 className="text-xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 md:mb-6 leading-tight">
                   <span className="text-blue-500"> ADMINISTRAÇÃO </span>
                   <br />
-                  DE PERFORMANCE EXECUTIVA
+                  PARA QUEM QUER LIDERAR
                 </h2>
                 <p className="text-xs md:text-lg text-white/80 leading-relaxed mb-4 md:mb-6">
                   A escolha certa para sua carreira. Uma graduação robusta e completa, reconhecida com a{" "}
