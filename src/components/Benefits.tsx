@@ -34,10 +34,10 @@ const Benefits = () => {
             <div className="benefits-grid">
               {/* Left side - Main Title */}
               <div className="animate-fade-in text-center md:text-left">
-              <h2 className="text-xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 md:mb-6 leading-tight">
+                <h2 className="text-xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 md:mb-6 leading-tight">
                   <span className="text-blue-500"> ADMINISTRAÇÃO </span>
                   <br />
-                  QUE TRANSFORMA CARREIRAS
+                  DE PERFORMANCE EXECUTIVA
                 </h2>
                 <p className="text-xs md:text-lg text-white/80 leading-relaxed mb-4 md:mb-6">
                   O curso de Administração da FASUL forma profissionais preparados para liderar, inovar e transformar
