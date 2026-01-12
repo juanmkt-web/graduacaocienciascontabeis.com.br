@@ -60,14 +60,17 @@ const CTA = () => {
           <div className="flex flex-col gap-4 md:gap-8 items-center mb-4 md:mb-8">
             <div className="text-white text-center">
               <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-3 md:mb-6">
-                PROMOÇÃO POR TEMPO LIMITADO:
+                GARANTA SUA VAGA NO
                 <br />
-                COMPRE UMA PÓS E LEVE <span className="text-primary">+3 GRÁTIS</span>.
+                <span className="text-primary">BACHARELADO EM ADMINISTRAÇÃO</span>
               </h2>
+              <p className="text-base md:text-xl text-white/90 max-w-2xl mx-auto">
+                Aproveite condições especiais e comece sua jornada para se tornar um administrador de sucesso.
+              </p>
             </div>
 
             <div className="text-center">
-              <p className="text-xs md:text-sm uppercase tracking-wider mb-2 md:mb-4 text-white/80">ACABA EM:</p>
+              <p className="text-xs md:text-sm uppercase tracking-wider mb-2 md:mb-4 text-white/80">OFERTA ESPECIAL ACABA EM:</p>
               <div className="inline-flex gap-1 md:gap-3 bg-black/30 backdrop-blur-sm rounded-xl md:rounded-2xl p-3 md:p-6">
                 <div className="text-center">
                   <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
@@ -101,24 +104,24 @@ const CTA = () => {
           </div>
 
           <div className="text-center px-2">
-            <a href="https://www.fasuleducacional.edu.br/posgraduacao/cursos" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.fasuleducacional.edu.br/graduacao/graduacao-em-administracao-ead" target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/80 font-bold text-sm md:text-xl px-6 md:px-12 py-5 md:py-8 rounded-full shadow-2xl animate-pulse-cta mb-4 md:mb-8 w-full md:w-auto max-w-full whitespace-normal"
               >
-                INICIAR MINHA GRADUAÇÃO AGORA!{" "}
+                QUERO ME MATRICULAR AGORA!{" "}
                 <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
               </Button>
             </a>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-6 text-xs md:text-sm text-white mt-4 md:mt-8">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5" />
-                <span>Sem mensalidades caras</span>
+                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-primary" />
+                <span>Mensalidade fixa de R$ 139/mês</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5" />
-                <span>Pagamento flexível para seu bolso</span>
+                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-primary" />
+                <span>Diploma reconhecido pelo MEC</span>
               </div>
             </div>
           </div>
