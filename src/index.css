@@ -48,9 +48,9 @@ All colors MUST be HSL.
     --radius: 0.75rem;
     
     /* Gradient colors - Navy blue to light blue */
-    --gradient-start: 197 90% 26%;
-    --gradient-mid: 200 85% 35%;
-    --gradient-end: 203 80% 45%;
+    --gradient-start: 210 100% 8%;
+    --gradient-mid: 197 90% 26%;
+    --gradient-end: 199 85% 60%;
     
     /* Legacy gradient colors */
     --gradient-cyan: 350 80% 60%;
@@ -139,9 +139,9 @@ All colors MUST be HSL.
   /* Fixed gradient background - Navy to light blue */
   .gradient-animated {
     background: linear-gradient(135deg, 
-      hsl(var(--gradient-start)) 0%, 
-      hsl(var(--gradient-mid)) 50%, 
-      hsl(var(--gradient-end)) 100%
+      #02101f 0%, 
+      #084D7B 40%, 
+      #3b9fd1 100%
     );
   }
   
