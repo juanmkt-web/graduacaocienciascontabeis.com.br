@@ -30,8 +30,8 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-4 md:py-12 relative z-10">
         <div className="max-w-2xl mb-6 md:mb-12">
           <div className="text-white animate-fade-in text-center md:text-left">
-            <div className="inline-block bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-4 py-1.5 mb-4">
-              <span className="text-blue-400 font-semibold text-sm">BACHARELADO EM ADMINISTRAÇÃO</span>
+            <div className="inline-block bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full px-4 py-1.5 mb-4">
+              <span className="text-primary font-semibold text-sm">BACHARELADO EM ADMINISTRAÇÃO</span>
             </div>
 
             <h1
@@ -40,7 +40,7 @@ const Hero = () => {
                 textShadow: "2px 2px 8px rgba(0, 0, 0, 0.2)",
               }}
             >
-              FORME-SE EM <span className="text-blue-400">ADMINISTRAÇÃO</span> E LIDERE O MERCADO
+              FORME-SE EM <span className="text-primary">ADMINISTRAÇÃO</span> E LIDERE O MERCADO
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
@@ -56,7 +56,7 @@ const Hero = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-blue-500 text-white hover:bg-blue-600 font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:shadow-[0_0_30px_rgba(59,130,246,0.7)] transition-all hover:-translate-y-1 animate-pulse-cta w-full md:w-auto"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-[0_0_20px_hsl(217_91%_53%/0.5)] hover:shadow-[0_0_30px_hsl(217_91%_53%/0.7)] transition-all hover:-translate-y-1 animate-pulse-cta w-full md:w-auto"
                 >
                   QUERO ME INSCREVER <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
@@ -65,15 +65,15 @@ const Hero = () => {
 
             <div className="flex flex-row gap-3 md:gap-6 justify-center md:justify-start flex-wrap">
               <div className="flex items-center gap-1 md:gap-2">
-                <Award className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-400" />
+                <Award className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-primary" />
                 <span className="text-xs md:text-sm font-medium">Diploma MEC</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
-                <BookOpen className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-400" />
+                <BookOpen className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-primary" />
                 <span className="text-xs md:text-sm font-medium">8 Semestres</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
-                <Users className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-400" />
+                <Users className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-primary" />
                 <span className="text-xs md:text-sm font-medium">+10 mil Alunos</span>
               </div>
             </div>
