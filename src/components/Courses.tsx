@@ -1,5 +1,17 @@
 import { useState } from "react";
-import { GraduationCap, Monitor, Clock, Calendar, BookOpen, Briefcase, TrendingUp, Users, BarChart3, Building2, ArrowRight } from "lucide-react";
+import {
+  GraduationCap,
+  Monitor,
+  Clock,
+  Calendar,
+  BookOpen,
+  Briefcase,
+  TrendingUp,
+  Users,
+  BarChart3,
+  Building2,
+  ArrowRight,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import cursoAdministracao from "@/assets/curso-administracao.jpg";
 
@@ -12,7 +24,8 @@ const courseDetails = {
   regularPrice: "R$ 329,00",
   image: cursoAdministracao,
   url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-administracao-ead",
-  description: "O curso de Bacharelado em Administração da FASUL prepara profissionais para atuar em todas as áreas da gestão empresarial, desenvolvendo competências em planejamento estratégico, finanças, marketing, recursos humanos e operações.",
+  description:
+    "O curso de Bacharelado em Administração da FASUL prepara profissionais para atuar em todas as áreas da gestão empresarial, desenvolvendo competências em planejamento estratégico, finanças, marketing, recursos humanos e operações.",
 };
 
 const curriculumModules = [
@@ -27,48 +40,23 @@ const curriculumModules = [
   },
   {
     semester: "2º Semestre",
-    subjects: [
-      "Teoria Geral da Administração",
-      "Contabilidade Básica",
-      "Economia",
-      "Sociologia Organizacional",
-    ],
+    subjects: ["Teoria Geral da Administração", "Contabilidade Básica", "Economia", "Sociologia Organizacional"],
   },
   {
     semester: "3º Semestre",
-    subjects: [
-      "Gestão de Pessoas",
-      "Marketing I",
-      "Estatística Aplicada",
-      "Direito Empresarial",
-    ],
+    subjects: ["Gestão de Pessoas", "Marketing I", "Estatística Aplicada", "Direito Empresarial"],
   },
   {
     semester: "4º Semestre",
-    subjects: [
-      "Administração Financeira I",
-      "Marketing II",
-      "Gestão de Processos",
-      "Comportamento Organizacional",
-    ],
+    subjects: ["Administração Financeira I", "Marketing II", "Gestão de Processos", "Comportamento Organizacional"],
   },
   {
     semester: "5º Semestre",
-    subjects: [
-      "Administração Financeira II",
-      "Gestão da Produção",
-      "Logística Empresarial",
-      "Sistemas de Informação",
-    ],
+    subjects: ["Administração Financeira II", "Gestão da Produção", "Logística Empresarial", "Sistemas de Informação"],
   },
   {
     semester: "6º Semestre",
-    subjects: [
-      "Planejamento Estratégico",
-      "Gestão de Projetos",
-      "Empreendedorismo",
-      "Administração Pública",
-    ],
+    subjects: ["Planejamento Estratégico", "Gestão de Projetos", "Empreendedorismo", "Administração Pública"],
   },
   {
     semester: "7º Semestre",
@@ -123,8 +111,8 @@ const Courses = () => {
         <div className="text-center mb-12 text-white animate-fade-in">
           <h2 className="text-3xl lg:text-5xl font-bold mb-4">CONHEÇA O CURSO</h2>
           <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-            O Bacharelado em Administração é um dos cursos mais versáteis do mercado, 
-            abrindo portas para diversas áreas de atuação profissional.
+            O Bacharelado em Administração é um dos cursos mais versáteis do mercado, abrindo portas para diversas áreas
+            de atuação profissional.
           </p>
         </div>
 
@@ -134,11 +122,7 @@ const Courses = () => {
             <div className="grid lg:grid-cols-2">
               {/* Image Side */}
               <div className="relative h-64 lg:h-auto">
-                <img
-                  src={courseDetails.image}
-                  alt={courseDetails.title}
-                  className="w-full h-full object-cover"
-                />
+                <img src={courseDetails.image} alt={courseDetails.title} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:bg-gradient-to-r" />
                 <div className="absolute bottom-4 left-4 right-4 lg:bottom-8 lg:left-8">
                   <span className="inline-block bg-primary text-white text-sm font-bold px-4 py-2 rounded-full mb-2">
@@ -149,12 +133,8 @@ const Courses = () => {
 
               {/* Content Side */}
               <div className="p-6 lg:p-10">
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-                  {courseDetails.title}
-                </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {courseDetails.description}
-                </p>
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">{courseDetails.title}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">{courseDetails.description}</p>
 
                 {/* Course Info */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
@@ -214,9 +194,7 @@ const Courses = () => {
 
         {/* Career Areas */}
         <div className="max-w-6xl mx-auto mb-16">
-          <h3 className="text-2xl lg:text-3xl font-bold text-white text-center mb-8">
-            ÁREAS DE ATUAÇÃO
-          </h3>
+          <h3 className="text-2xl lg:text-3xl font-bold text-white text-center mb-8">ÁREAS DE ATUAÇÃO</h3>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             {careerAreas.map((area, index) => (
               <div
@@ -234,39 +212,6 @@ const Courses = () => {
         </div>
 
         {/* Curriculum */}
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl lg:text-3xl font-bold text-white text-center mb-8">
-            GRADE CURRICULAR
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {curriculumModules.map((module, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl overflow-hidden shadow-lg"
-              >
-                <button
-                  onClick={() => setExpandedSemester(expandedSemester === index ? null : index)}
-                  className="w-full px-5 py-4 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors"
-                >
-                  <span className="font-bold text-gray-900">{module.semester}</span>
-                  <span className={`transform transition-transform ${expandedSemester === index ? 'rotate-180' : ''}`}>
-                    ▼
-                  </span>
-                </button>
-                <div className={`overflow-hidden transition-all duration-300 ${expandedSemester === index ? 'max-h-48' : 'max-h-0'}`}>
-                  <ul className="p-4 space-y-2">
-                    {module.subjects.map((subject, subIndex) => (
-                      <li key={subIndex} className="flex items-center gap-2 text-gray-700 text-sm">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                        {subject}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20">
