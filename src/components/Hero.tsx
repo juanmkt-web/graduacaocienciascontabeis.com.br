@@ -40,7 +40,7 @@ const Hero = () => {
                 textShadow: "2px 2px 8px rgba(0, 0, 0, 0.2)",
               }}
             >
-              FORME-SE EM <span className="text-primary">ADMINISTRAÇÃO</span> E LIDERE O MERCADO
+              TORNE-SE EXPERT EM <span className="text-primary">NEGÓCIOS E GESTÃO</span> HOJE MESMO.
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
