@@ -2,7 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqItems = [
   {
-    question: "Qual a duração do curso de Bacharelado em Administração?",
+    question: "Qual a duração do Curso de Bacharelado em Administração?",
     answer:
       "O Curso de Bacharelado em Administração tem duração de 8 semestres, com carga horária total de 3.200 horas. É possível concluir em menos tempo através do aproveitamento de disciplinas, caso você já tenha cursado outra Graduação.",
   },
