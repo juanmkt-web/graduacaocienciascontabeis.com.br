@@ -1,14 +1,14 @@
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
-import mauricioFoto from "@/assets/mauricio-ricardo-soares.avif";
-import emilyaFoto from "@/assets/roberta-maia.png";
-import pauloFoto from "@/assets/paulo-silva.png";
+import mauricioFoto from "@/assets/mauricio-pereira-andrade.png";
+import emilyaFoto from "@/assets/emilya-soares.png";
+import pauloFoto from "@/assets/paulo-jose-cardoso.png";
 import { useState, useEffect } from "react";
 
 const testimonials = [
   {
     id: 1,
     quote:
-      "Eu tinha 15 anos de experiência prática, mas sempre perdia as promoções para diretores mais jovens porque não tinha o diploma. A graduação foi a validação que o mercado exigia. Apenas 6 meses após a formatura, finalmente assumi a Gerência Geral da empresa. O diploma tirou o 'teto' que limitava meu salário.",
+      "Eu tinha 15 anos de empresa, mas batia no teto. Via gente mais nova sendo promovida porque eu não tinha o diploma superior. A Administração foi a chave que faltava. Unindo minha experiência prática com a teoria da faculdade, assumi a Gerência Geral em menos de um ano de formado.",
     name: "Mauricio Pereira Andrade",
     course: "Administração",
     photo: mauricioFoto,
@@ -16,17 +16,17 @@ const testimonials = [
   {
     id: 2,
     quote:
-      "Trabalhava no financeiro apenas 'apagando incêndio', lançando notas sem entender o negócio. Estava estagnada. O curso me ensinou a analisar balanços e prever cenários. Quando apresentei um plano de redução de custos para a diretoria, fui promovida a Analista Sênior. Hoje meu salário é três vezes maior.",
+      "Fiquei estagnada como Assistente Administrativa por anos. Eu organizava a vida dos diretores, mas ganhava pouco. O curso mudou minha postura. Aprendi a analisar processos e reduzir custos. Quando mostrei resultados reais, fui promovida a Coordenadora e hoje tripliquei minha renda.",
     name: "Emilya Soares",
-    course: "Ciências Contábeis",
+    course: "Administração",
     photo: emilyaFoto,
   },
   {
     id: 3,
     quote:
-      "Eu era um ótimo vendedor de rua, mas não sabia liderar e vivia na instabilidade da comissão. Precisava de gestão para crescer. A faculdade me deu a visão estratégica de métricas e pessoas. Saí da rotina de visitas para assumir a Supervisão Regional de Vendas, com carteira assinada e bônus por meta da equipe.",
+      "Trabalhava como representante comercial, rodando o dia todo e dependendo de comissão incerta. Eu queria estabilidade e crescimento. A graduação me preparou para liderar equipes. Saí da rua para o escritório: hoje sou Supervisor de Logística e tenho a segurança financeira que minha família precisava.",
     name: "Paulo José Cardoso",
-    course: "Gestão Comercial",
+    course: "Administração",
     photo: pauloFoto,
   },
 ];
