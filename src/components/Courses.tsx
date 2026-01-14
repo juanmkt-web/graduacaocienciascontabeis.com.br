@@ -123,7 +123,7 @@ const Courses = () => {
               {/* Image Side */}
               <div className="relative h-64 lg:h-auto min-h-[300px]">
                 <img src={courseDetails.image} alt={courseDetails.title} className="w-full h-full object-cover object-center" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent lg:bg-gradient-to-r" />
+                <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.4)_0%,transparent_30%)] lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.4)_0%,transparent_30%)]" />
               </div>
 
               {/* Content Side */}
