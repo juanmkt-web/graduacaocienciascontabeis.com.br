@@ -4,7 +4,7 @@ const faqItems = [
   {
     question: "Qual a duração do curso de Bacharelado em Administração?",
     answer:
-      "O curso de Bacharelado em Administração tem duração de 4 anos (8 semestres), com carga horária total de 3.200 horas. É possível concluir em menos tempo através do aproveitamento de disciplinas, caso você já tenha cursado outra graduação.",
+      "O Curso de Bacharelado em Administração tem duração de 8 semestres, com carga horária total de 3.200 horas. É possível concluir em menos tempo através do aproveitamento de disciplinas, caso você já tenha cursado outra Graduação.",
   },
   {
     question: "O diploma de Administração EaD é reconhecido pelo MEC?",
@@ -19,17 +19,12 @@ const faqItems = [
   {
     question: "Preciso ter experiência prévia em administração?",
     answer:
-      "Não é necessário ter experiência prévia. O curso foi desenvolvido para formar profissionais do zero, com disciplinas que vão do básico ao avançado, preparando você para o mercado de trabalho.",
-  },
-  {
-    question: "Como funciona o estágio obrigatório?",
-    answer:
-      "O estágio supervisionado pode ser realizado em empresas da sua região. A FASUL oferece todo o suporte para você encontrar oportunidades e desenvolver suas habilidades práticas durante a graduação.",
+      "Não é necessário ter experiência prévia. O Curso foi desenvolvido para formar profissionais do zero, com disciplinas que vão do básico ao avançado, preparando você para o mercado de trabalho.",
   },
   {
     question: "Qual o valor do investimento?",
     answer:
-      "A mensalidade é de apenas R$ 139,00 com valor fixo até o final do curso (sem reajustes). Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento, PIX e débito automático.",
+      "A mensalidade é de apenas R$ 139,00 com valor fixo até o final do Curso. Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento e PIX.",
   },
 ];
 
