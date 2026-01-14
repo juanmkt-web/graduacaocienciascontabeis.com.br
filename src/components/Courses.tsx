@@ -13,7 +13,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import cursoAdministracao from "@/assets/curso-administracao.jpg";
+import cursoAdministracao from "@/assets/curso-administracao.webp";
 
 const courseDetails = {
   title: "Bacharelado em Administração",
@@ -121,8 +121,8 @@ const Courses = () => {
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
             <div className="grid lg:grid-cols-2">
               {/* Image Side */}
-              <div className="relative h-64 lg:h-auto">
-                <img src={courseDetails.image} alt={courseDetails.title} className="w-full h-full object-cover" />
+              <div className="relative h-64 lg:h-auto min-h-[300px]">
+                <img src={courseDetails.image} alt={courseDetails.title} className="w-full h-full object-cover object-center" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:bg-gradient-to-r" />
               </div>
 
