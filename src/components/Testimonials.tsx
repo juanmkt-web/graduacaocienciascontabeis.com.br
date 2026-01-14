@@ -8,26 +8,26 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Sempre sonhei em abrir meu próprio negócio, mas não sabia por onde começar. O curso de Administração me deu toda a base que eu precisava: finanças, marketing, gestão de pessoas. Hoje tenho minha loja e aplico tudo que aprendi no dia a dia.",
-    name: "Roberta Maia",
-    role: "Empreendedora",
-    photo: robertaFoto,
+      "Eu tinha 15 anos de experiência prática, mas sempre perdia as promoções para diretores mais jovens porque não tinha o diploma. A graduação foi a validação que o mercado exigia. Apenas 6 meses após a formatura, finalmente assumi a Gerência Geral da empresa. O diploma tirou o 'teto' que limitava meu salário.",
+    name: "Mauricio Pereira Andrade",
+    course: "Administração",
+    photo: mauricioFoto,
   },
   {
     id: 2,
     quote:
-      "Trabalhava como auxiliar administrativo há anos e não conseguia crescer. Depois de me formar em Administração, fui promovido a coordenador e hoje ganho o dobro do que ganhava antes. O investimento valeu cada centavo.",
-    name: "Paulo Silva",
-    role: "Coordenador Administrativo",
-    photo: pauloFoto,
+      "Trabalhava no financeiro apenas 'apagando incêndio', lançando notas sem entender o negócio. Estava estagnada. O curso me ensinou a analisar balanços e prever cenários. Quando apresentei um plano de redução de custos para a diretoria, fui promovida a Analista Sênior. Hoje meu salário é três vezes maior.",
+    name: "Emilya Soares",
+    course: "Ciências Contábeis",
+    photo: emilyaFoto,
   },
   {
     id: 3,
     quote:
-      "O curso me preparou para assumir a gestão da empresa da família. Aprendi a profissionalizar os processos, criar indicadores e tomar decisões baseadas em dados. Hoje a empresa cresceu 40% em faturamento.",
-    name: "João Lima",
-    role: "Gestor Empresarial",
-    photo: joaoFoto,
+      "Eu era um ótimo vendedor de rua, mas não sabia liderar e vivia na instabilidade da comissão. Precisava de gestão para crescer. A faculdade me deu a visão estratégica de métricas e pessoas. Saí da rotina de visitas para assumir a Supervisão Regional de Vendas, com carteira assinada e bônus por meta da equipe.",
+    name: "Paulo José Cardoso",
+    course: "Gestão Comercial",
+    photo: pauloFoto,
   },
 ];
 
