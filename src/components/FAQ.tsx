@@ -22,9 +22,9 @@ const faqItems = [
       "Não é necessário ter experiência prévia. O Curso foi desenvolvido para formar profissionais do zero, com disciplinas que vão do básico ao avançado, preparando você para o mercado de trabalho.",
   },
   {
-    question: "Como funciona o estágio obrigatório?",
+    question: "Qual o valor do investimento?",
     answer:
-      "O estágio supervisionado pode ser realizado em empresas da sua região. A FASUL oferece todo o suporte para você encontrar oportunidades e desenvolver suas habilidades práticas durante a graduação.",
+      "A mensalidade é de apenas R$ 139,00 com valor fixo até o final do Curso. Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento e PIX.",
   },
 ];
 
