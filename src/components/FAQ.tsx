@@ -29,7 +29,7 @@ const faqItems = [
   {
     question: "Qual o valor do investimento?",
     answer:
-      "A mensalidade é de apenas R$ 139,00 com valor fixo até o final do curso (sem reajustes). Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento, PIX e débito automático.",
+      "A mensalidade é de apenas R$ 139,00 com valor fixo até o final do Curso. Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento, PIX e débito automático.",
   },
 ];
 
