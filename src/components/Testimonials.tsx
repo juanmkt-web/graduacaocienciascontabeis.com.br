@@ -110,10 +110,7 @@ const Testimonials = () => {
                 alt={currentTestimonial.name}
                 className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-blue-400 object-cover"
               />
-              <div className="text-white">
-                <p className="font-bold text-lg md:text-xl">{currentTestimonial.name}</p>
-                <p className="text-white/70 text-sm">{currentTestimonial.course}</p>
-              </div>
+              <p className="text-white font-bold text-lg md:text-xl">{currentTestimonial.name}</p>
             </div>
           </div>
 
@@ -148,10 +145,7 @@ const Testimonials = () => {
                   alt={testimonial.name}
                   className="w-12 h-12 ultrawide:w-[54px] ultrawide:h-[54px] rounded-full border-2 border-blue-400 object-cover"
                 />
-                <div className="text-white">
-                  <p className="font-bold text-sm ultrawide:text-[16px]">{testimonial.name}</p>
-                  <p className="text-white/60 text-xs">{testimonial.course}</p>
-                </div>
+                <p className="text-white font-bold text-sm ultrawide:text-[16px]">{testimonial.name}</p>
               </div>
             </div>
           ))}
