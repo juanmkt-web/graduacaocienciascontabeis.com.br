@@ -1,7 +1,7 @@
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
-import robertaFoto from "@/assets/roberta-maia.png";
+import mauricioFoto from "@/assets/mauricio-ricardo-soares.avif";
+import emilyaFoto from "@/assets/roberta-maia.png";
 import pauloFoto from "@/assets/paulo-silva.png";
-import joaoFoto from "@/assets/joao-lima.png";
 import { useState, useEffect } from "react";
 
 const testimonials = [
@@ -112,7 +112,7 @@ const Testimonials = () => {
               />
               <div className="text-white">
                 <p className="font-bold text-lg md:text-xl">{currentTestimonial.name}</p>
-                <p className="text-white/70 text-sm">{currentTestimonial.role}</p>
+                <p className="text-white/70 text-sm">{currentTestimonial.course}</p>
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ const Testimonials = () => {
                 />
                 <div className="text-white">
                   <p className="font-bold text-sm ultrawide:text-[16px]">{testimonial.name}</p>
-                  <p className="text-white/60 text-xs">{testimonial.role}</p>
+                  <p className="text-white/60 text-xs">{testimonial.course}</p>
                 </div>
               </div>
             </div>
