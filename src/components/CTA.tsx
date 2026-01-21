@@ -39,7 +39,7 @@ const CTA = () => {
   }, []);
 
   return (
-    <section className="py-12 md:py-24 gradient-animated relative overflow-hidden">
+    <section className="py-8 md:py-24 gradient-animated relative overflow-hidden">
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="absolute top-0 left-0 right-0 h-10 md:h-16 lg:h-20 rotate-180">
         <svg
@@ -57,14 +57,14 @@ const CTA = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto animate-fade-in">
-          <div className="flex flex-col gap-4 md:gap-8 items-center mb-4 md:mb-8">
+          <div className="flex flex-col gap-3 md:gap-8 items-center mb-3 md:mb-8">
             <div className="text-white text-center">
-              <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-3 md:mb-6">
+              <h2 className="text-lg md:text-3xl lg:text-5xl font-bold mb-2 md:mb-6">
                 GARANTA SUA VAGA NO
                 <br />
                 <span className="text-blue-500">BACHARELADO EM ADMINISTRAÇÃO</span>
               </h2>
-              <p className="text-base md:text-xl text-white/90 max-w-2xl mx-auto">
+              <p className="text-sm md:text-xl text-white/90 max-w-2xl mx-auto">
                 Aproveite condições especiais e comece sua jornada para se tornar um administrador de sucesso.
               </p>
             </div>
@@ -114,14 +114,14 @@ const CTA = () => {
               </Button>
             </a>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-6 text-xs md:text-sm text-white mt-4 md:mt-8">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-blue-500" />
-                <span>Mensalidade fixa de R$ 139/mês</span>
+            <div className="flex flex-row items-center justify-center gap-2 md:gap-6 text-[10px] md:text-sm text-white mt-3 md:mt-8 flex-wrap">
+              <div className="flex items-center gap-1 md:gap-2">
+                <CheckCircle2 className="h-3 w-3 md:h-5 md:w-5 text-blue-500 flex-shrink-0" />
+                <span className="whitespace-nowrap">Mensalidade fixa de R$ 139/mês</span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-blue-500" />
-                <span>Diploma reconhecido pelo MEC</span>
+              <div className="flex items-center gap-1 md:gap-2">
+                <CheckCircle2 className="h-3 w-3 md:h-5 md:w-5 text-blue-500 flex-shrink-0" />
+                <span className="whitespace-nowrap">Diploma reconhecido pelo MEC</span>
               </div>
             </div>
           </div>

@@ -30,12 +30,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-4 md:py-12 relative z-10">
         <div className="max-w-2xl mb-6 md:mb-12">
           <div className="text-white animate-fade-in text-center md:text-left">
-            <div className="inline-block bg-amber-500/20 backdrop-blur-sm border border-amber-400/40 rounded-full px-4 py-1.5 mb-4">
-              <span className="text-amber-300 font-semibold text-sm">BACHARELADO EM ADMINISTRAÇÃO</span>
+            <div className="inline-block bg-amber-500/20 backdrop-blur-sm border border-amber-400/40 rounded-full px-2 py-1 md:px-4 md:py-1.5 mb-2 md:mb-4">
+              <span className="text-amber-300 font-semibold text-xs md:text-sm">BACHARELADO EM ADMINISTRAÇÃO</span>
             </div>
 
             <h1
-              className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-4 md:mb-6 leading-tight"
+              className="text-xl md:text-4xl lg:text-5xl font-extrabold mb-2 md:mb-6 leading-tight"
               style={{
                 textShadow: "2px 2px 8px rgba(0, 0, 0, 0.2)",
               }}
@@ -43,7 +43,7 @@ const Hero = () => {
               TORNE-SE EXPERT EM <span className="text-primary">NEGÓCIOS E GESTÃO</span> E LIDERE O MERCADO
             </h1>
 
-            <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
+            <p className="text-sm md:text-xl text-white/90 leading-relaxed mb-3 md:mb-8">
               Domine os pilares essenciais do mercado: Finanças, Estratégia e Pessoas. Saia do operacional e prepare-se
               para ocupar cargos de comando, tomando as decisões difíceis que definem o sucesso de uma empresa.
             </p>
