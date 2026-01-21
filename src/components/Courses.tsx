@@ -91,7 +91,7 @@ const Courses = () => {
   const [expandedSemester, setExpandedSemester] = useState<number | null>(null);
 
   return (
-    <section id="cursos" className="pb-24 gradient-animated relative">
+    <section id="cursos" className="pb-12 md:pb-24 gradient-animated relative">
       <div className="absolute top-0 left-0 right-0 h-10 md:h-16 lg:h-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -164,20 +164,20 @@ const Courses = () => {
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-row gap-2 md:flex-col md:gap-3 sm:flex-row">
+                <div className="flex flex-row gap-2 md:gap-3">
                   <Button
-                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full text-xs md:text-base py-3 md:py-6 flex-1 shadow-[0_0_20px_rgba(37,99,235,0.5)]"
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full text-[11px] md:text-base py-2.5 md:py-6 px-3 md:px-6 flex-1 shadow-[0_0_20px_rgba(37,99,235,0.5)]"
                     asChild
                   >
                     <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
-                      MATRICULE-SE <ArrowRight className="ml-1 md:ml-2 h-4 w-4 md:h-5 md:w-5" />
+                      MATRICULE-SE <ArrowRight className="ml-1 md:ml-2 h-3 w-3 md:h-5 md:w-5" />
                     </a>
                   </Button>
                   <a
                     href={courseDetails.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 font-bold text-xs md:text-base border-2 border-blue-600 rounded-full py-2.5 md:py-3 px-4 md:px-6 hover:bg-blue-600/10 transition-colors text-center flex-1 md:flex-none"
+                    className="text-blue-600 font-bold text-[11px] md:text-base border-2 border-blue-600 rounded-full py-2.5 md:py-6 px-3 md:px-6 hover:bg-blue-600/10 transition-colors text-center flex-1 flex items-center justify-center"
                   >
                     SAIBA MAIS
                   </a>
