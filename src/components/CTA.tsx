@@ -114,14 +114,14 @@ const CTA = () => {
               </Button>
             </a>
 
-            <div className="flex flex-row items-center justify-center gap-2 md:gap-6 text-[10px] md:text-sm text-white mt-3 md:mt-8 flex-wrap">
+            <div className="flex flex-row items-center justify-center gap-3 md:gap-6 text-[9px] md:text-sm text-white mt-3 md:mt-8">
               <div className="flex items-center gap-1 md:gap-2">
                 <CheckCircle2 className="h-3 w-3 md:h-5 md:w-5 text-blue-500 flex-shrink-0" />
-                <span className="whitespace-nowrap">Mensalidade fixa de R$ 139/mês</span>
+                <span className="whitespace-nowrap">R$ 139/mês fixo</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
                 <CheckCircle2 className="h-3 w-3 md:h-5 md:w-5 text-blue-500 flex-shrink-0" />
-                <span className="whitespace-nowrap">Diploma reconhecido pelo MEC</span>
+                <span className="whitespace-nowrap">Diploma MEC</span>
               </div>
             </div>
           </div>
