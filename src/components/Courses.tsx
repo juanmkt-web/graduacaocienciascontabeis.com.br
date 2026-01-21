@@ -106,78 +106,78 @@ const Courses = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 pt-16">
+      <div className="container mx-auto px-4 relative z-10 pt-10 md:pt-16">
         {/* Header */}
-        <div className="text-center mb-12 text-white animate-fade-in">
-          <h2 className="text-3xl lg:text-5xl font-bold mb-4">CONHEÇA O CURSO</h2>
-          <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
+        <div className="text-center mb-6 md:mb-12 text-white animate-fade-in">
+          <h2 className="text-2xl lg:text-5xl font-bold mb-2 md:mb-4">CONHEÇA O CURSO</h2>
+          <p className="text-sm md:text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
             O Bacharelado em Administração é um dos cursos mais versáteis do mercado, abrindo portas para diversas áreas
             de atuação profissional.
           </p>
         </div>
 
         {/* Main Course Card */}
-        <div className="max-w-6xl mx-auto mb-16">
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+        <div className="max-w-6xl mx-auto mb-8 md:mb-16">
+          <div className="bg-white rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden">
             <div className="grid lg:grid-cols-2">
               {/* Image Side */}
-              <div className="relative h-64 lg:h-auto min-h-[300px]">
+              <div className="relative h-48 md:h-64 lg:h-auto min-h-[200px] md:min-h-[300px]">
                 <img src={courseDetails.image} alt={courseDetails.title} className="w-full h-full object-cover object-center" />
                 <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.4)_0%,transparent_30%)] lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.4)_0%,transparent_30%)]" />
               </div>
 
               {/* Content Side */}
-              <div className="p-6 lg:p-10">
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">{courseDetails.title}</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">{courseDetails.description}</p>
+              <div className="p-4 md:p-6 lg:p-10">
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-2 md:mb-4">{courseDetails.title}</h3>
+                <p className="text-sm md:text-base text-gray-600 mb-3 md:mb-6 leading-relaxed">{courseDetails.description}</p>
 
                 {/* Course Info */}
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="flex items-center gap-2">
-                    <GraduationCap className="w-5 h-5 text-blue-600" />
-                    <span className="text-sm font-medium text-gray-700">Bacharelado</span>
+                <div className="grid grid-cols-2 gap-2 md:gap-4 mb-3 md:mb-6">
+                  <div className="flex items-center gap-1.5 md:gap-2">
+                    <GraduationCap className="w-4 h-4 md:w-5 md:h-5 text-blue-600" />
+                    <span className="text-xs md:text-sm font-medium text-gray-700">Bacharelado</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Monitor className="w-5 h-5 text-blue-600" />
-                    <span className="text-sm font-medium text-gray-700">{courseDetails.modality}</span>
+                  <div className="flex items-center gap-1.5 md:gap-2">
+                    <Monitor className="w-4 h-4 md:w-5 md:h-5 text-blue-600" />
+                    <span className="text-xs md:text-sm font-medium text-gray-700">{courseDetails.modality}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-5 h-5 text-blue-600" />
-                    <span className="text-sm font-medium text-gray-700">{courseDetails.hours}</span>
+                  <div className="flex items-center gap-1.5 md:gap-2">
+                    <Clock className="w-4 h-4 md:w-5 md:h-5 text-blue-600" />
+                    <span className="text-xs md:text-sm font-medium text-gray-700">{courseDetails.hours}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-5 h-5 text-blue-600" />
-                    <span className="text-sm font-medium text-gray-700">{courseDetails.semesters}</span>
+                  <div className="flex items-center gap-1.5 md:gap-2">
+                    <Calendar className="w-4 h-4 md:w-5 md:h-5 text-blue-600" />
+                    <span className="text-xs md:text-sm font-medium text-gray-700">{courseDetails.semesters}</span>
                   </div>
                 </div>
 
                 {/* Pricing */}
-                <div className="bg-gray-50 rounded-xl p-4 mb-6">
-                  <div className="flex items-baseline gap-2 mb-1">
-                    <span className="text-3xl font-bold text-gray-900">{courseDetails.promoPrice}</span>
-                    <span className="text-lg text-gray-900">/mês</span>
-                    <span className="text-gray-400 line-through ml-2">{courseDetails.regularPrice}</span>
+                <div className="bg-gray-50 rounded-lg md:rounded-xl p-3 md:p-4 mb-3 md:mb-6">
+                  <div className="flex items-baseline gap-1.5 md:gap-2 mb-1">
+                    <span className="text-2xl md:text-3xl font-bold text-gray-900">{courseDetails.promoPrice}</span>
+                    <span className="text-base md:text-lg text-gray-900">/mês</span>
+                    <span className="text-gray-400 line-through ml-1 md:ml-2 text-sm md:text-base">{courseDetails.regularPrice}</span>
                   </div>
-                  <span className="inline-block text-xs bg-gradient-to-r from-emerald-500 to-teal-400 text-white px-3 py-1 rounded-full font-semibold">
+                  <span className="inline-block text-[10px] md:text-xs bg-gradient-to-r from-emerald-500 to-teal-400 text-white px-2 md:px-3 py-0.5 md:py-1 rounded-full font-semibold">
                     VALOR FIXO ATÉ O FINAL DO CURSO
                   </span>
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex flex-row gap-2 md:flex-col md:gap-3 sm:flex-row">
                   <Button
-                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full text-base py-6 flex-1 shadow-[0_0_20px_rgba(37,99,235,0.5)]"
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full text-xs md:text-base py-3 md:py-6 flex-1 shadow-[0_0_20px_rgba(37,99,235,0.5)]"
                     asChild
                   >
                     <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
-                      MATRICULE-SE AGORA <ArrowRight className="ml-2 h-5 w-5" />
+                      MATRICULE-SE <ArrowRight className="ml-1 md:ml-2 h-4 w-4 md:h-5 md:w-5" />
                     </a>
                   </Button>
                   <a
                     href={courseDetails.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 font-bold text-base border-2 border-blue-600 rounded-full py-3 px-6 hover:bg-blue-600/10 transition-colors text-center"
+                    className="text-blue-600 font-bold text-xs md:text-base border-2 border-blue-600 rounded-full py-2.5 md:py-3 px-4 md:px-6 hover:bg-blue-600/10 transition-colors text-center flex-1 md:flex-none"
                   >
                     SAIBA MAIS
                   </a>
@@ -188,19 +188,19 @@ const Courses = () => {
         </div>
 
         {/* Career Areas */}
-        <div className="max-w-6xl mx-auto mb-16">
-          <h3 className="text-2xl lg:text-3xl font-bold text-white text-center mb-8">ÁREAS DE ATUAÇÃO</h3>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="max-w-6xl mx-auto mb-8 md:mb-16">
+          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white text-center mb-4 md:mb-8">ÁREAS DE ATUAÇÃO</h3>
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4">
             {careerAreas.map((area, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-center hover:bg-white/20 transition-colors"
+                className="bg-white/10 backdrop-blur-sm rounded-lg md:rounded-xl p-3 md:p-4 lg:p-6 text-center hover:bg-white/20 transition-colors"
               >
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <area.icon className="w-6 h-6 text-white" />
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+                  <area.icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
                 </div>
-                <h4 className="text-white font-bold text-sm lg:text-base mb-1">{area.title}</h4>
-                <p className="text-white/70 text-xs lg:text-sm">{area.description}</p>
+                <h4 className="text-white font-bold text-xs md:text-sm lg:text-base mb-0.5 md:mb-1">{area.title}</h4>
+                <p className="text-white/70 text-[10px] md:text-xs lg:text-sm">{area.description}</p>
               </div>
             ))}
           </div>

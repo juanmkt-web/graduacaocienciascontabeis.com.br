@@ -45,11 +45,11 @@ const Benefits = () => {
                   hierarquia corporativa.
                 </p>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
+                <div className="flex flex-wrap gap-x-3 gap-y-1 md:grid md:grid-cols-3 md:gap-3 justify-center md:justify-start">
                   {highlights.map((item, index) => (
-                    <div key={index} className="flex items-center gap-1.5 text-white/90">
-                      <CheckCircle2 className="h-3 w-3 md:h-4 md:w-4 text-blue-500 flex-shrink-0" />
-                      <span className="text-[10px] md:text-sm">{item}</span>
+                    <div key={index} className="flex items-center gap-1 md:gap-1.5 text-white/90">
+                      <CheckCircle2 className="h-2.5 w-2.5 md:h-4 md:w-4 text-blue-500 flex-shrink-0" />
+                      <span className="text-[9px] md:text-sm whitespace-nowrap">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -57,7 +57,7 @@ const Benefits = () => {
 
               {/* Right side - Benefits List */}
               <div
-                className="space-y-2 md:space-y-6 animate-fade-in"
+                className="space-y-1.5 md:space-y-6 animate-fade-in"
                 style={{
                   animationDelay: "0.2s",
                 }}
@@ -65,7 +65,7 @@ const Benefits = () => {
                 {benefits.map((benefit, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-2 md:gap-4 animate-fade-in ml-4 sm:ml-6 md:ml-10 lg:ml-14"
+                    className="flex items-center gap-1.5 md:gap-4 animate-fade-in ml-2 sm:ml-6 md:ml-10 lg:ml-14"
                     style={{
                       animationDelay: `${0.3 + index * 0.1}s`,
                     }}

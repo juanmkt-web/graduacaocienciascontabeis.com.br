@@ -48,7 +48,7 @@ const Testimonials = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section id="depoimentos" className="py-12 md:py-24 desktop:pb-[116px] bg-[#1e2842] relative">
+    <section id="depoimentos" className="py-8 md:py-24 desktop:pb-[116px] bg-[#1e2842] relative">
       <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20 pointer-events-none">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -63,11 +63,11 @@ const Testimonials = () => {
         </svg>
       </div>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-6 md:mb-12 animate-fade-in text-white">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4">
+        <div className="text-center mb-4 md:mb-12 animate-fade-in text-white">
+          <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-1 md:mb-4">
             ADMINISTRADORES <span className="text-blue-400">DE SUCESSO</span>
           </h2>
-          <p className="text-sm md:text-lg text-white/90 max-w-3xl mx-auto">
+          <p className="text-xs md:text-lg text-white/90 max-w-3xl mx-auto">
             Veja como o curso de Administração transformou a carreira dos nossos alunos.
           </p>
         </div>
@@ -97,20 +97,20 @@ const Testimonials = () => {
           </button>
 
           <div
-            className="glass-effect rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-12 shadow-2xl animate-fade-in block mx-8 md:mx-12"
+            className="glass-effect rounded-xl md:rounded-3xl p-4 md:p-8 lg:p-12 shadow-2xl animate-fade-in block mx-6 md:mx-12"
             key={currentTestimonial.id}
           >
-            <Quote className="h-8 w-8 md:h-12 md:w-12 text-blue-400 mb-3 md:mb-6" />
-            <p className="text-base md:text-xl lg:text-2xl text-white mb-5 md:mb-8 leading-relaxed italic font-light">
+            <Quote className="h-6 w-6 md:h-12 md:w-12 text-blue-400 mb-2 md:mb-6" />
+            <p className="text-sm md:text-xl lg:text-2xl text-white mb-3 md:mb-8 leading-relaxed italic font-light">
               "{currentTestimonial.quote}"
             </p>
-            <div className="flex items-center gap-4 md:gap-6 border-t border-white/20 pt-5 md:pt-8">
+            <div className="flex items-center gap-3 md:gap-6 border-t border-white/20 pt-3 md:pt-8">
               <img
                 src={currentTestimonial.photo}
                 alt={currentTestimonial.name}
-                className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-blue-400 object-cover"
+                className="w-12 h-12 md:w-20 md:h-20 rounded-full border-2 md:border-4 border-blue-400 object-cover"
               />
-              <p className="text-white font-bold text-lg md:text-xl">{currentTestimonial.name}</p>
+              <p className="text-white font-bold text-sm md:text-xl">{currentTestimonial.name}</p>
             </div>
           </div>
 

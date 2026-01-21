@@ -54,14 +54,14 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <section className="pt-5 pb-32 bg-[#1E2842] relative">
+    <section className="pt-5 pb-20 md:pb-32 bg-[#1E2842] relative">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="text-center mb-6 md:mb-12">
+          <h2 className="text-2xl md:text-5xl font-bold text-white mb-2 md:mb-4">
             BLOG DE INFORMAÇÕES
           </h2>
-          <p className="text-gray-300 text-lg max-w-3xl mx-auto">
+          <p className="text-gray-300 text-sm md:text-lg max-w-3xl mx-auto">
             Dicas de carreira, tendências de mercado e tudo o que você precisa
             saber para impulsionar sua trajetória profissional.
           </p>

@@ -30,27 +30,27 @@ const faqItems = [
 
 const FAQ = () => {
   return (
-    <section className="pt-4 md:pt-6 pb-12 md:pb-16 bg-white">
+    <section className="pt-4 md:pt-6 pb-8 md:pb-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="mb-10 text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-4">PERGUNTAS FREQUENTES</h2>
-            <p className="text-gray-600 text-lg">Tire suas dúvidas sobre o Bacharelado em Administração da FASUL</p>
+          <div className="mb-4 md:mb-10 text-center">
+            <h2 className="text-xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-2 md:mb-4">PERGUNTAS FREQUENTES</h2>
+            <p className="text-gray-600 text-sm md:text-lg">Tire suas dúvidas sobre o Bacharelado em Administração da FASUL</p>
           </div>
 
           {/* FAQ Accordion */}
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-2 md:space-y-4">
             {faqItems.map((item, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border border-gray-200 rounded-lg px-6 data-[state=open]:border-blue-500"
+                className="border border-gray-200 rounded-lg px-3 md:px-6 data-[state=open]:border-blue-500"
               >
-                <AccordionTrigger className="text-left text-[#1E2842] font-medium text-base md:text-lg hover:no-underline py-5">
+                <AccordionTrigger className="text-left text-[#1E2842] font-medium text-sm md:text-lg hover:no-underline py-3 md:py-5">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-base pb-5">{item.answer}</AccordionContent>
+                <AccordionContent className="text-gray-600 text-xs md:text-base pb-3 md:pb-5">{item.answer}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
