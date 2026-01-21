@@ -17,7 +17,7 @@ const faqItems = [
       "O administrador pode atuar em diversas áreas como: gestão empresarial, finanças, recursos humanos, marketing, logística, consultoria, empreendedorismo, gestão pública, entre outras. É uma das formações mais versáteis do mercado.",
   },
   {
-    question: "Preciso ter experiência prévia em administração?",
+    question: "Preciso ter experiência prévia em Administração?",
     answer:
       "Não é necessário ter experiência prévia. O Curso foi desenvolvido para formar profissionais do zero, com disciplinas que vão do básico ao avançado, preparando você para o mercado de trabalho.",
   },
@@ -35,8 +35,12 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-4 md:mb-10 text-center">
-            <h2 className="text-xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-2 md:mb-4">PERGUNTAS FREQUENTES</h2>
-            <p className="text-gray-600 text-sm md:text-lg">Tire suas dúvidas sobre o Bacharelado em Administração da FASUL</p>
+            <h2 className="text-xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-2 md:mb-4">
+              PERGUNTAS FREQUENTES
+            </h2>
+            <p className="text-gray-600 text-sm md:text-lg">
+              Tire suas dúvidas sobre o Bacharelado em Administração da FASUL
+            </p>
           </div>
 
           {/* FAQ Accordion */}
@@ -50,7 +54,9 @@ const FAQ = () => {
                 <AccordionTrigger className="text-left text-[#1E2842] font-medium text-sm md:text-lg hover:no-underline py-3 md:py-5">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-xs md:text-base pb-3 md:pb-5">{item.answer}</AccordionContent>
+                <AccordionContent className="text-gray-600 text-xs md:text-base pb-3 md:pb-5">
+                  {item.answer}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
